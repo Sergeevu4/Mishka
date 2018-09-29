@@ -3,177 +3,198 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/normalize.min.css">
   </head>
-  <body>
+  <body class="page">
     <header class="page-header">
-      <a class="page-header__logo-link">
-        <img class="page-header__logo" src="#" width="86" height="35" alt="Логотип сайта Mishka">
+      <a class="page-header__logo logo">
+        <img class="logo__image" src="http://placehold.it/86x35" alt="Логотип сайта Mishka">
       </a>
-      <!-- Убрал микс с лого, так как посмотрел стайл гайд там будет еще одно лого в футере, получается logo-mishka будет не один за проект, или можно было оставить микс но написать модификатор logo-mishka--footer-->
 
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню </span>
         </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--active" href="catalog.html">Каталог товаров</a>
-            <!--site-list__link--active - действительно нужен ли этот класс, а если просто стилизовать по наличию у ссылки href, то есть нет href - значит она активна -->
+
+        <ul class="main-nav__list header-list">
+          <li class="header-list__item">
+            <a class="header-list__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+
+          <li class="header-list__item header-list__item--current">
+            <a class="header-list__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="site-list__item">
-            <button type="button" class="site-list__button site-list__button--loupe">
-              <svg></svg>
+
+          <li class="header-list__item">
+            <button type="button" class="header-list__button header-list__button--loupe">
+              <img src="http://placehold.it/18x18">
             </button>
-            <!-- Не уверен в правильности выбора кнопки, возможно следовало сделать ссылки  -->
-            <a class="site-list__link" href="#" >Поиск по сайту</a>
+            <a class="header-list__link" href="#" >Поиск по сайту</a>
           </li>
-          <li class="site-list__item">
-             <button type="button" class="site-list__button button-basket">
-              <!-- Заметил что данная кнопка встречается еще в одном месте в каталоге, как бы ее правильно назвать для дальнейшего переиспользования, решил выйти из ситуации просто назвать кнопку, если я верно интерпретирую БЭМ - Блоком (и тут до меня дошло, что все равно мы будет вставлял svg - в html - так как из css менять цвет не получиться).-->
-              <svg></svg>
+
+          <li class="header-list__item">
+            <button type="button" class="header-list__button header-list__button--basket">
+              <img src="http://placehold.it/21x18">
             </button>
-            <!-- Не уверен в правильности выбора кнопки, возможно следовало сделать ссылки  -->
-            <a class="site-list__link" href="#">Корзина: пока пуста</a>
+            <a class="header-list__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
+
+      <div class="page-header__headline">
+        <h1 class="page-header__title">Милые штуки ручной работы для дома</h1>
+      </div>
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Интернет-магазин &#171;Mishka&#187; вязанные игрушки и предметы интерьера ручной работы</h1>
-      <section class="service">
-        <h2 class="visually-hidden">Перечень услуг нашего интернет магазина</h2>
-        <!-- background-image
-          Подумал, на мой субъективный взгляд все таки ,наверное, можно было вставить изображения html, так как на ней изображенны работы которые и изготавливают в магазине, тем самым как предположительного покупателя может заинтересовать продаваемые тут товар.
-         -->
-        <p class="service__title">Милые штуки ручной работы для дома</p>
-        <div class="service__disc">
-          <a class="service__link service__link--interior" href="#">Предметы интерьера</a>
-          <!-- в css вставлю псевдоэлементы
-              service__disc - задам flex
-              service__link -задам flex
-          -->
-          <a class="service__link service__link--toys" href="#">Детские игрушки</a>
-        </div>
-      </section>
+      <nav class="main-navigation">
+        <ul class="main-navigation__list">
+
+          <li class="main-navigation__item">
+            <a class="main-navigation__link main-navigation__link--interior" href="#">Предметы интерьера</a>
+          </li>
+
+          <li class="main-navigation__item">
+            <a class="main-navigation__link main-navigation__link--toys" href="#">Детские игрушки</a>
+          </li>
+
+        </ul>
+      </nav>
 
       <section class="best-product">
-        <h2 class="visually-hidden">Лучшие товары за неделю</h2>
-        <h3 class="best-product__title">Вязаные корзинки</h3>
+        <h2 class="best-product__title">Вязаные корзинки</h2>
         <div class="best-product__sticker">Товар недели</div>
-        <p class="best-product__disc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <p class="best-product__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+
         <table class="best-product__table">
-          <tr class="best-product__column">
+          <tr class="best-product__row">
             <td class="best-product__cell">Цвет:</td>
             <td class="best-product__cell">«Тиффани»/серый</td>
           </tr>
-          <tr class="best-product__column">
+
+          <tr class="best-product__row">
             <td class="best-product__cell">Диаметр:</td>
             <td class="best-product__cell">25 см</td>
           </tr>
-          <tr class="best-product__column">
+
+          <tr class="best-product__row">
             <td class="best-product__cell">Высота:</td>
             <td class="best-product__cell">15 см</td>
           </tr>
         </table>
-        <img class="best-product__img" src="#" width="260" height="315" alt="Фотография вязанной корзинки">
+        <img class="best-product__img" src="http://placehold.it/260x315" alt="Фотография вязанной корзинки">
         <div class="best-product__cost">Цена: 990 руб.</div>
         <a class="button best-product__button"  href="#">Заказать</a>
-      <!-- Возможно тут было необходимо добавить какой-то разделителaь-объединитель ?(div)
-       -->
       </section>
+
       <section class="about-us">
-        <h2 class="visually-hidden">Информация о преимуществах нашей компании</h2>
-        <h3 class="about-us__title">Коротко о нас:</h3>
+        <h2 class="about-us__title">Коротко о нас:</h2>
           <ul class="about-us__list">
             <li class="about-us__item about-us__item--flower">Экологически чистые материалы</li>
+
             <li class="about-us__item about-us__item--banknote">Скандинавский стиль по российской цене</li>
+
             <li class="about-us__item about-us__item--heart">Увеличивает лайки на фотографиях</li>
+
             <li class="about-us__item about-us__item--ball">Связано вручную с любовью и умилением</li>
+
             <li class="about-us__item about-us__item--rocket">Поддержка отечественного производителя</li>
+
             <li class="about-us__item about-us__item--gift">Поставляется в подарочной упаковке</li>
           </ul>
       </section>
 
       <section class="reviews">
-        <h2 class="visually-hidden">Отзывы о нашем интернет магазине</h2>
-        <h3 class="reviews__title">Отзывы</h3>
-        <div class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</div>
-        <div class="reviews__author">Анастасия Красильникова</div>
-        <div class="reviews__hashtag">@misssssiskras</div>
+        <h2 class="reviews__title">Отзывы</h2>
+
+        <div class="reviews__wrapper">
+          <blockquote>
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+
+            <cite class="reviews__author">Анастасия Красильникова</cite>
+
+            <div class="reviews__hashtag">@misssssiskras</div>
+              <!-- Можно reviews__hashtag в span - вставить напрямую в cite -->
+          </blockquote>
+        </div>
+
         <button class="reviews__button reviews__button--left" type="button">
           <span class="visually-hidden">Предыдущий отзыв</span>
         </button>
-         <button class="reviews__button reviews__button--right" type="button">
+
+        <button class="reviews__button reviews__button--right" type="button">
           <span class="visually-hidden">Следующий отзыв</span>
         </button>
-        <a class="button reviews__write" href="#">Написать</a>
-        <!-- Если бы оказалось болше колличество отзывов, наверное стоило бы  лучше верстать списком
-        Меня смущает такое большое колличество div -  это нормальная практика?
-         У меня вопрос касаемо оформления кнопок-ссылок, button - общий для всех, но как называть второй класс(просто как выше элемент блока или с помошью модификатора: button--reviews-write ?)-->
+
+        <a class="button reviews__button-write" href="#">Написать</a>
+        <!-- Кнопка: Заказать, Написать, Напишите нам - главная страница у них одинаковые стили применяю button, для дополнительной стилизации использую класс по блоку родителя-->
       </section>
 
-      <section class="communication">
-        <h2 class="visually-hidden">Как найти нашу компанию</h2>
-        <table class="communication-table contacts-table">
-          <caption class="contacts-table__title">Контакты</caption>
-          <!-- Тут спорный момент, можно было сделать как везде через h3 -->
-          <tr class="contacts-table__column">
-            <td class="contacts-table__cell">e-mail:</td>
-            <td class="contacts-table__cell">
-              <a class="contacts-table__link-mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </td>
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+
+        <table class="contacts__table contacts-info">
+          <tr class="contacts-info__row">
+            <td class="contacts-info__cell">e-mail:</td>
+
+            <td class="contacts-info__cell">
+              <a class="contacts-info__link-mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </td>
           </tr>
-           <tr class="contacts-table__column">
-            <td class="contacts-table__cell">адрес:</td>
-            <td class="contacts-table__cell">г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</td>
+
+          <tr class="contacts-info__row">
+            <td class="contacts-info__cell">адрес:</td>
+            <td class="contacts-info__cell">г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</td>
           </tr>
+
         </table>
-        <!-- Верно ли я произвел микс на примере таблицы? -->
-        <img class="communication__img" src="#" width="322" height="457" alt="Наше местоположение на карте">
-        <!-- следовало мне прописывать размеры картинок если они будут меняться
-        Надо ли оборачивать изображения в div ?
-         -->
-        <a class="button communication__button" href="#">Напишите нам</a>
+
+        <img class="contacts__img" src="http://placehold.it/322x457" alt="Местоположение на карте">
+
+        <a class="button contacts__button" href="#">Напишите нам</a>
       </section>
 
-      <section class="popup">
-        <h2 class="visually-hidden">Форма выбора размера изделия</h2>
-        <h3 class="popup__title">Добавить в корзину</h3>
-        <div class="popup__disc">Выберите размер:</div>
-        <ul class="popup__selection select-size">
-          <li class="select-size__item">S</li>
-          <li class="select-size__item">M</li>
-          <li class="select-size__item">L</li>
-        </ul>
-        <button class="button popup__button" type="button">Добавить</button>
-      </section>
+      <div class="popup">
+        <h2 class="popup__title">Добавить в корзину</h2>
+
+        <div class="popup__desc">Выберите размер:</div>
+
+        <form class="popup__form size-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="size-form__grid">
+            <label class="size-form__label">S
+              <input class="size-form__input" type="radio" name="size-selection" value="size-S" checked>
+            </label>
+
+            <label class="size-form__selection">M
+              <input class="size-form__input" type="radio" name="size-selection" value="size-M">
+            </label>
+
+            <label class="size-form__selection">L
+              <input class="size-form__input" type="radio" name="size-selection" value="size-L">
+            </label>
+          </div>
+          <button class="button popup__button" type="submit">Добавить</button>
+        </form>
+      </div>
+
       <div class="modal-overlay"></div>
     </main>
 
     <footer class="page-footer">
-        <a class="page-footer__logo-link">
-          <img class="page-footer__logo" src="#" alt="Логотип сайта Mishka">
-        </a>
 
-        <!-- Как лучше всего организовать изменения цвета svg, с помощью добавления в html или просто заменить картинку через css? -->
-
-        <div class="page-footer____social social">
+        <div class="page-footer___social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="https://www.instagram.com/">
                 <span class="visually-hidden">instagram</span>
               </a>
             </li>
+
             <li class="social__item">
               <a class="social__link" href="https://www.facebook.com/">
                 <span class="visually-hidden">facebook</span>
               </a>
             </li>
+
             <li class="social__item">
               <a class="social__link" href="https://twitter.com/">
                 <span class="visually-hidden">twitter</span>
@@ -182,8 +203,8 @@
           </ul>
         </div>
 
-        <a class="page-footer__site-developer" href="https://htmlacademy.ru/">
-          <span class="visually-hidden">htmlacademy</span>
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/">
+          <span class="page-footer__text">Разработано</span>
         </a>
 
     </footer>
