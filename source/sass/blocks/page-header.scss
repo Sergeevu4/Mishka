@@ -1,0 +1,29 @@
+.page-header {
+
+}
+
+.page-header__logo {
+  // width: ;
+  // height: ;
+}
+
+.page-header__title-wrapper {
+  width: 320px;
+  min-height: 280px;
+  padding: 50px;
+
+  text-align: center;
+
+  background: url("../../img/hero-mobile@1x.jpg") no-repeat center #f1f1f1;
+
+
+
+}
+
+.page-header__title {
+  margin: 0;
+
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+}

@@ -1,0 +1,35 @@
+// Основная навигация
+.header-nav {
+
+}
+
+.header-nav__toggle {
+  width: 20px;
+  height: 14px;
+
+
+  background-color: #000000;
+  border: none;
+
+}
+
+.header-nav__list {
+  @include list-config;
+
+}
+
+.header-nav__item {
+
+}
+
+.header-nav__link {
+  font: inherit;
+
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+
+  }
+
+
