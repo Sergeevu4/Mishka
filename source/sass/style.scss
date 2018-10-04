@@ -1,1 +1,26 @@
+// source\sass\blocks\page-header.scss
+
+// Подключение normalize
+@import "normalize.scss";
+
+// Переменные (variables)
+@import "variables.scss";
+
+// Mixin
+@import "mixins.scss";
+
+// Шрифт
+@import "font.scss";
+
+// Глобальные стили html, body
+@import "global.scss";
+
+// Скрыть элементы (visually-hidden)
+@import "visually-hidden";
+
+// Шапка сайта (header)
+@import "blocks/page-header";
+
+// Основная навигация
+@import "blocks/header-nav"
 
