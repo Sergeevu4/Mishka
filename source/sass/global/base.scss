@@ -12,8 +12,8 @@ body {
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
-  color: #000000;
-  background-color: #ffffff;
+  color: $black;
+  background-color: $white;
 
   max-width: 320px;
   margin: 0 auto;
@@ -21,6 +21,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
