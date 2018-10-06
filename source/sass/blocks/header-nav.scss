@@ -1,35 +1,66 @@
 // Основная навигация
 .header-nav {
+  position: relative;
 
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 .header-nav__toggle {
+  position: absolute;
+  top: -47px;
+  right: -26px;
+
   width: 20px;
   height: 14px;
+  padding: 0;
 
-
-  background-color: #000000;
+  background-color: transparent;
   border: none;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+
+  cursor: pointer;
+
+    &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+
+   }
 
 }
 
 .header-nav__list {
-  @include list-config;
+  @include list-reset;
 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .header-nav__item {
+  width: 260px;
+
 
 }
 
 .header-nav__link {
-  font: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 79px;
 
-  color: #000000;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
-
+    &:hover {
+      opacity: 0.6;
   }
+
+    &:active {
+      opacity: 0.3;
+  }
+}
 
 
