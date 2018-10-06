@@ -1,0 +1,51 @@
+// Навигация по сайту (index.html)
+
+.categories-nav {
+  margin-bottom: 26px;
+
+  min-height: 200px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $white;
+}
+
+.categories-nav__list {
+  @include list-reset;
+
+}
+
+.categories-nav__item {
+  background-color: $green;
+}
+
+.categories-nav__item:nth-child(2) {
+  background-color: $green-dark;
+}
+
+
+.categories-nav__link {
+  display: block;
+  padding: 25px 25px 30px 29px;
+
+    &--interior {
+      background-image: url("../../img/icon-interior.svg" );
+      background-repeat: no-repeat;
+      background-position: 243px 22px;
+    }
+
+    &--toys {
+      background-image: url("../../img/icon-toy.svg" );
+      background-repeat: no-repeat;
+      background-position: 232px 22px;
+    }
+
+    &:hover {
+      transform: translateX(5px);
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+}
