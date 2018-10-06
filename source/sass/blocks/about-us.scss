@@ -1,8 +1,8 @@
 // О нас (index.html)
 
 .about-us {
-  padding: 18px 30px 0 30px;
-  margin-bottom: 56px;
+  padding: 18px 25px 0 25px;
+  margin-bottom: 55px;
 
 }
 
@@ -23,44 +23,35 @@
 .about-us__item {
   margin-bottom: 20px;
   padding-top: 63px;
+  padding-left: 5px;
 
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
 
   &--flower {
-    background: url("../../img/icon-feature-flower.svg") no-repeat 8px 10px;
+    background: url("../../img/icon-feature-flower.svg") no-repeat 13px 8px;
   }
 
   &--banknote {
-    background: url("../../img/icon-feature-money.svg") no-repeat 0 10px;
+    background: url("../../img/icon-feature-money.svg") no-repeat 5px 9px;
   }
 
   &--heart {
-    background: url("../../img/icon-feature-heart.svg") no-repeat 7px 16px;
-  }
-
-  &--heart {
-    background: url("../../img/icon-feature-heart.svg") no-repeat 7px 16px;
+    background: url("../../img/icon-feature-heart.svg") no-repeat 13px 14px;
   }
 
   &--ball {
-    background: url("../../img/icon-feature-ball.svg")no-repeat 3px 13px;
+    background: url("../../img/icon-feature-ball.svg")no-repeat 8px 11px;
   }
 
   &--rocket {
-    background: url("../../img/icon-feature-rocket.svg")no-repeat 0 14px;
+    background: url("../../img/icon-feature-rocket.svg")no-repeat 0 12px;
   }
 
   &--gift {
-    background: url("../../img/icon-feature-gift.svg")no-repeat 3px 12px;
+    background: url("../../img/icon-feature-gift.svg")no-repeat 8px 10px;
   }
-
-
-
-
-
-
 
 }
 
