@@ -1,6 +1,6 @@
 // source\sass\blocks\page-header.scss
 
-// Подключение normalize
+// Подключение (normalize)
 @import "global/normalize.scss";
 
 // Переменные (variables)
@@ -12,12 +12,26 @@
 // Шрифт
 @import "global/font.scss";
 
-// Глобальные стили html, body
+// Глобальные стили (html, body)
 @import "global/base.scss";
 
 // Шапка сайта (header)
 @import "blocks/page-header";
 
 // Основная навигация
-@import "blocks/header-nav"
+@import "blocks/header-nav";
 
+// Основные стили для кнопки
+@import "blocks/button";
+
+// Навигация по сайту (index.html)
+@import "blocks/categories-nav";
+
+// Лучший продукт (index.html)
+@import "blocks/best-product";
+
+// О нас (index.html)
+@import "blocks/about-us";
+
+// Отзывы (index.html)
+@import "blocks/reviews";
