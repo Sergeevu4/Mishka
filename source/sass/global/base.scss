@@ -33,6 +33,13 @@ img {
   height: auto;
 }
 
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+  outline-color: $green;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
