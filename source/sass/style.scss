@@ -15,14 +15,14 @@
 // Глобальные стили (html, body)
 @import "global/base.scss";
 
+// Основные стили для кнопки
+@import "blocks/button";
+
 // Шапка сайта (header)
 @import "blocks/page-header";
 
 // Основная навигация
 @import "blocks/header-nav";
-
-// Основные стили для кнопки
-@import "blocks/button";
 
 // Навигация по сайту (index.html)
 @import "blocks/categories-nav";
@@ -35,3 +35,18 @@
 
 // Отзывы (index.html)
 @import "blocks/reviews";
+
+// Контакты (index.html)
+@import "blocks/contacts";
+
+// Контакты - Таблица (index.html)
+@import "blocks/contacts-info";
+
+// Попап
+@import "blocks/popup";
+
+// Подвал
+@import "blocks/page-footer";
+
+// Социальные сети
+@import "blocks/social";
