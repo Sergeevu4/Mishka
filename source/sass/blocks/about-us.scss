@@ -3,7 +3,6 @@
 .about-us {
   padding: 18px 25px 0 25px;
   margin-bottom: 55px;
-
 }
 
 .about-us__title {
@@ -13,7 +12,6 @@
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
-
 }
 
 .about-us__list {
@@ -42,17 +40,14 @@
   }
 
   &--ball {
-    background: url("../../img/icon-feature-ball.svg")no-repeat 8px 11px;
+    background: url("../../img/icon-feature-ball.svg") no-repeat 8px 11px;
   }
 
   &--rocket {
-    background: url("../../img/icon-feature-rocket.svg")no-repeat 0 12px;
+    background: url("../../img/icon-feature-rocket.svg") no-repeat 0 12px;
   }
 
   &--gift {
-    background: url("../../img/icon-feature-gift.svg")no-repeat 8px 10px;
+    background: url("../../img/icon-feature-gift.svg") no-repeat 8px 10px;
   }
-
 }
-
-
