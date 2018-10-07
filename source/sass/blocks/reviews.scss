@@ -3,7 +3,6 @@
 .reviews {
   padding: 0 30px;
   margin-bottom: 45px;
-
 }
 
 .reviews__title {
@@ -13,7 +12,6 @@
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
-
 }
 
 .reviews__list {
@@ -27,7 +25,6 @@
 
 .reviews__blockquote {
   margin: 0;
-
 }
 
 .reviews__text {
@@ -35,11 +32,10 @@
   margin-bottom: 28px;
 
   line-height: 30px;
-
 }
 
 .reviews__author {
-
+  // color: yellow;
 }
 
 .reviews__author-name {
@@ -58,7 +54,6 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 17px;
-
 }
 
 .reviews__button {
@@ -68,28 +63,27 @@
   margin-bottom: 20px;
 
   background-color: $white;
-  border: none;
   border: 1px solid $grey;
 
   cursor: pointer;
 
-    &--prev {
-      background: url("../../img/icon-left-arrow.svg") no-repeat center;
-    }
+  &--prev {
+    background: url("../../img/icon-left-arrow.svg") no-repeat center;
+  }
 
-    &--next {
-      background: url("../../img/icon-right-arrow.svg") no-repeat center;
-    }
+  &--next {
+    background: url("../../img/icon-right-arrow.svg") no-repeat center;
+  }
 
-    &--prev:hover,
-    &--next:hover {
-      opacity: 0.6;
-    }
+  &--prev:hover,
+  &--next:hover {
+    opacity: 0.6;
+  }
 
-    &--prev:active,
-    &--next:active {
-      opacity: 0.3;
-    }
+  &--prev:active,
+  &--next:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__button:nth-child(2n) {
@@ -97,5 +91,5 @@
 }
 
 .reviews__button-write {
-
+  // color: yellow;
 }
