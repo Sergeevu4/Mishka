@@ -27,27 +27,35 @@
   font-weight: 700;
   line-height: 20px;
 
+  background-repeat: no-repeat;
+
   &--flower {
-    background: url("../../img/icon-feature-flower.svg") no-repeat 13px 8px;
+    background-image: url("../../img/icon-feature-flower.svg");
+    background-position: 13px 8px;
   }
 
   &--banknote {
-    background: url("../../img/icon-feature-money.svg") no-repeat 5px 9px;
+    background-image: url("../../img/icon-feature-money.svg");
+    background-position: 5px 9px;
   }
 
   &--heart {
-    background: url("../../img/icon-feature-heart.svg") no-repeat 13px 14px;
+    background-image: url("../../img/icon-feature-heart.svg");
+    background-position: 13px 14px;
   }
 
   &--ball {
-    background: url("../../img/icon-feature-ball.svg") no-repeat 8px 11px;
+    background-image: url("../../img/icon-feature-ball.svg");
+    background-position: 8px 11px;
   }
 
   &--rocket {
-    background: url("../../img/icon-feature-rocket.svg") no-repeat 0 12px;
+    background-image: url("../../img/icon-feature-rocket.svg");
+    background-position: 0 12px;
   }
 
   &--gift {
-    background: url("../../img/icon-feature-gift.svg") no-repeat 8px 10px;
+    background-image: url("../../img/icon-feature-gift.svg");
+    background-position: 8px 10px;
   }
 }

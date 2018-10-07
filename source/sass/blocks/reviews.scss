@@ -63,16 +63,18 @@
   margin-bottom: 20px;
 
   background-color: $white;
+  background-repeat: no-repeat;
+  background-position: center;
   border: 1px solid $grey;
 
   cursor: pointer;
 
   &--prev {
-    background: url("../../img/icon-left-arrow.svg") no-repeat center;
+    background-image: url("../../img/icon-left-arrow.svg");
   }
 
   &--next {
-    background: url("../../img/icon-right-arrow.svg") no-repeat center;
+    background-image: url("../../img/icon-right-arrow.svg");
   }
 
   &--prev:hover,
