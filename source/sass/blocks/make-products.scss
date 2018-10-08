@@ -1,0 +1,63 @@
+// Процесс производства (catalog.html)
+
+.make-products {
+  outline: 1px solid $grey;
+  outline-offset: -1px;
+  padding-top: 24px;
+  padding-bottom: 28px;
+  margin-bottom: 58px;
+  word-wrap: break-word;
+}
+
+.make-products__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 23px;
+  padding-left: 90px;
+  padding-right: 23px;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  &::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 34px;
+    top: 5px;
+    background-image: url("../../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+
+.make-products__video {
+  position: relative;
+  display: flex;
+  margin-bottom: 27px;
+}
+
+.make-products__video-icon {
+  position: absolute;
+  top: 37px;
+  left: 81px;
+  display: block;
+}
+
+.make-products__text {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0 34px;
+  font-size: 13px;
+  font-weight: 400;
+  color: $grey-dark;
+}
+
+
+.make-products__button-order {
+  width: 192px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
