@@ -1,0 +1,21 @@
+// Продукты (catalog.html)
+
+// Центровщик
+.catalog-wrapper {
+  padding: 0 30px;
+}
+
+.products {
+  // margin: 20px;
+}
+
+.products__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.products__item {
+  // color: yellow;
+}
