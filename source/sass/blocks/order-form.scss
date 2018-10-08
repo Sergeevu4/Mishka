@@ -1,6 +1,7 @@
+//Форма (form.html)
 
 .order-form {
- word-break: break-word;
+  word-break: break-word;
 }
 
 .order-form__group {
@@ -71,8 +72,8 @@
     border-radius: 50%;
     border-width: 2px;
     border-style: solid;
-    border-color: $grey-dark
-    }
+    border-color: $grey-dark;
+  }
 
   &:hover::before {
     border-color: $green;
@@ -111,7 +112,7 @@
     background-color: transparent;
     border-width: 2px;
     border-style: solid;
-    border-color: $grey-dark
+    border-color: $grey-dark;
   }
 
   &:hover::before {
