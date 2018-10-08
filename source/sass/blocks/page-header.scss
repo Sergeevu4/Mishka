@@ -22,12 +22,20 @@
 
 .page-header__title-wrapper {
   width: 320px;
-  min-height: 279px;
-  padding: 67px 20px 10px 20px;
+  min-height: 177px;
+  padding: 71px 20px 10px 20px;
+  margin-bottom: 20px;
 
+  background-color: $grey;
   text-align: center;
+}
 
-  background: url("../../img/hero-mobile@1x.jpg") no-repeat center $grey;
+.page-header__title-wrapper--img {
+  background-image: url("../../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 279px;
+  margin: 0;
 }
 
 .page-header__title {
