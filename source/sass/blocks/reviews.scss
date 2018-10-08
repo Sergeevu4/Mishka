@@ -16,7 +16,7 @@
 
 .reviews__list {
   @include list-reset;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
 }
 
 .reviews__item {
@@ -35,16 +35,22 @@
 }
 
 .reviews__author {
-  // color: yellow;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .reviews__author-name {
+  margin-bottom: 3px;
+
   font-size: 17px;
   font-weight: 700;
   font-style: normal;
 }
 
 .reviews__author-nickname {
+  margin-bottom: 3px;
+  letter-spacing: 1px;
   font-weight: 400;
   line-height: 30px;
 }
