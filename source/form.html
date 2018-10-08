@@ -51,10 +51,12 @@
     </header>
 
     <main class="page-main">
+      <div class="form-wrapper">
+        <!-- Временная обертка -->
       <section class="order">
         <h2 class="visually-hidden">Форма заказа</h2>
 
-        <div class="order__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</div>
+        <div class="order__desc">Мы будем рады воплотить в жизнь ваши&nbsp;пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</div>
 
         <form class="order__form order-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="order-form__group">
@@ -62,18 +64,18 @@
 
             <ul class="order-form__list">
               <li class="order-form__item">
-                <label class="order-form__label order-form__label--radio">
-                  <input class="order-form__input" type="radio" name="order-type" value="interior" checked>
+                <label class="order-form__label">
+                  <input class="order-form__input visually-hidden" type="radio" name="order-type" value="interior" checked>
 
-                  <span class="order-form__label-text">Аксессуар для интерьера</span>
+                  <span class="order-form__label-radio">Аксессуар для интерьера</span>
                 </label>
               </li>
 
               <li class="order-form__item">
-                <label class="order-form__label order-form__label--radio">
-                  <input class="order-form__input" type="radio" name="order-type" value="toys">
+                <label class="order-form__label">
+                  <input class="order-form__input visually-hidden" type="radio" name="order-type" value="toys">
 
-                  <span class="order-form__label-text">Детская игрушка</span>
+                  <span class="order-form__label-radio">Детская игрушка</span>
                 </label>
               </li>
             </ul>
@@ -84,50 +86,50 @@
 
             <ul class="order-form__list">
               <li class="order-form__item">
-                <label class="order-form__label order-form__label--checkbox">
-                  <input class="order-form__input" type="checkbox" name="color" value="White">
+                <label class="order-form__label">
+                  <input class="order-form__input visually-hidden" type="checkbox" name="color" value="White">
 
-                  <span class="order-form__label-text">Белый</span>
+                  <span class="order-form__label-checkbox">Белый</span>
                 </label>
               </li>
 
               <li class="order-form__item">
-                <label class="order-form__label order-form__label--checkbox">
-                  <input class="order-form__input" type="checkbox" name="color" value="Gray">
+                <label class="order-form__label">
+                  <input class="order-form__input visually-hidden" type="checkbox" name="color" value="Gray">
 
-                  <span class="order-form__label-text">Серый</span>
+                  <span class="order-form__label-checkbox">Серый</span>
                 </label>
               </li>
 
               <li class="order-form__item">
-                <label class="order-form__label order-form__label--checkbox">
-                  <input class="order-form__input" type="checkbox" name="color" value="Tiffany">
+                <label class="order-form__label">
+                  <input class="order-form__input visually-hidden" type="checkbox" name="color" value="Tiffany">
 
-                  <span class="order-form__label-text">&#171;Тиффани&#187;</span>
+                  <span class="order-form__label-checkbox">&#171;Тиффани&#187;</span>
                 </label>
               </li>
 
               <li class="order-form__item">
-                <label class="order-form__label order-form__label--checkbox">
-                  <input class="order-form__input" type="checkbox" name="color" value="Black">
+                <label class="order-form__label">
+                  <input class="order-form__input visually-hidden" type="checkbox" name="color" value="Black">
 
-                  <span class="order-form__label-text">Черный</span>
+                  <span class="order-form__label-checkbox">Черный</span>
                 </label>
               </li>
 
               <li class="order-form__item">
-                <label class="order-form__label order-form__label--checkbox">
-                  <input class="order-form__input" type="checkbox" name="color" value="Pink">
+                <label class="order-form__label">
+                  <input class="order-form__input visually-hidden" type="checkbox" name="color" value="Pink">
 
-                  <span class="order-form__label-text">Розовый</span>
+                  <span class="order-form__label-checkbox">Розовый</span>
                 </label>
               </li>
 
               <li class="order-form__item">
-                <label class="order-form__label order-form__label--checkbox">
-                  <input class="order-form__input" type="checkbox" name="color" value="Orange">
+                <label class="order-form__label">
+                  <input class="order-form__input visually-hidden" type="checkbox" name="color" value="Orange">
 
-                  <span class="order-form__label-text">Оранжевый</span>
+                  <span class="order-form__label-checkbox">Оранжевый</span>
                 </label>
               </li>
             </ul>
@@ -138,7 +140,7 @@
 
             <ul class="order-form__list">
               <li class="order-form__item">
-                <label class="order-form__label order-form__label--text">
+                <label class="order-form__label">
                   <span class="order-form__label-text">Имя:</span>
 
                   <input class="order-form__input" type="text" name="name" placeholder="Введите ваше имя*" required>
@@ -146,7 +148,7 @@
               </li>
 
               <li class="order-form__item">
-                <label class="order-form__label order-form__label--text">
+                <label class="order-form__label">
                   <span class="order-form__label-text">Фамилия:</span>
 
                   <input class="order-form__input" type="text" name="family-name" placeholder="Укажите фамилию*" required>
@@ -154,7 +156,7 @@
               </li>
 
               <li class="order-form__item">
-                <label class="order-form__label order-form__label--text">
+                <label class="order-form__label">
                   <span class="order-form__label-text">Отчество:</span>
 
                   <input class="order-form__input" type="text" name="middle-name" placeholder="Отчество, если желаете">
@@ -167,8 +169,9 @@
             <label class="order-form__title">Тел
               <input class="order-form__input order-form__input--contact" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
 
-              <img src="img/icon-phone.svg" alt="">
+              <img class="contact-img" src="img/icon-phone.svg" alt="">
                 <!-- svg -->
+                <!-- Временный класс -->
             </label>
           </div>
 
@@ -176,22 +179,24 @@
             <label class="order-form__title">E-mail
               <input class="order-form__input order-form__input--contact" type="email" name="email" placeholder="Ваш Email*" required>
 
-              <img src="img/icon-mail.svg" alt="">
+              <img class="contact-img" src="img/icon-mail.svg" alt="">
                 <!-- svg -->
+                <!-- Временный класс -->
             </label>
           </div>
 
           <div class="order-form__group">
-            <label class="order-form__title">Доп
+            <label class="order-form__title order-form__title--contact">Доп
               <textarea class="order-form__textarea" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </label>
           </div>
 
           <div class="order-form__tooltip">*Поля обязательны для заполнения</div>
 
-          <button class="order-form__submit" type="submit">Отправить заказ</button>
+          <button class="button order-form__submit" type="submit">Отправить заказ</button>
         </form>
       </section>
+      </div>
     </main>
 
     <footer class="page-footer">
