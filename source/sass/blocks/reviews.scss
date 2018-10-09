@@ -2,7 +2,7 @@
 
 .reviews {
   padding: 0 30px;
-  margin-bottom: 45px;
+  margin-bottom: 38px;
 }
 
 .reviews__title {
@@ -16,7 +16,7 @@
 
 .reviews__list {
   @include list-reset;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
 }
 
 .reviews__item {
@@ -99,5 +99,5 @@
 }
 
 .reviews__button-write {
-  // color: yellow;
+  margin-bottom: 10px;
 }

@@ -5,10 +5,8 @@
   flex-direction: column;
   flex-wrap: wrap;
 
-  margin-bottom: 31px;
-  outline: 1px solid $grey;
-  outline-offset: -1px;
-
+  margin-bottom: 28px;
+  border: 1px solid $grey;
   word-wrap: break-word;
 
   &:hover {
@@ -49,8 +47,9 @@
 
 .product__desc {
   position: relative;
-  margin-bottom: 41px;
+  margin-bottom: 16px;
   padding: 0 28px;
+  padding-bottom: 25px;
 
   font-size: 13px;
   font-weight: 400;
@@ -61,7 +60,7 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: -20px;
+    bottom: 5px;
     left: 25px;
     width: 204px;
     height: 1px;
