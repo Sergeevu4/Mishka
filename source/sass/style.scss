@@ -42,25 +42,26 @@
 // Контакты - Таблица (index.html)
 @import "blocks/contacts-info";
 
-// Попап
-@import "blocks/popup";
-
 // Подвал
 @import "blocks/page-footer";
 
 // Социальные сети
 @import "blocks/social";
 
-// ******************** form.html **************************
+// ******************** popup ******************************
+// Попап таблица + overlay
+@import "blocks/popup";
+@import "blocks/size-form";
 
-// Форма (form.html)
+// ******************** form.html **************************
+// Форма заказа
 @import "blocks/order";
 @import "blocks/order-form";
 
-// Каталог (catalog.html)
+// ******************** catalog.html************************
+// Каталог товаров
 @import "blocks/products";
 @import "blocks/product";
 @import "blocks/make-products";
-
 
 // source\sass\blocks\page-header.scss
