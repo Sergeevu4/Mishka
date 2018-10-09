@@ -1,9 +1,61 @@
-// Попап
-
-.popup {
-  display: none;
-}
+// Попап + .overlay
 
 .modal-overlay {
-  display: none;
+  // display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.popup {
+  // display: flex;
+  // flex-direction: column;
+
+  // Как вы думаете стоит ли тут использовать флекс?
+
+  text-align: center;
+
+  width: 320px;
+  min-height: 336px;
+  padding: 32px 20px 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  // margin-top: -290px;
+  // margin-left: -480px;
+  transform: translate (-50%,-50%);
+  background-color: $white;
+  border: 1px solid $grey;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  z-index: 3;
+  word-wrap: break-word;
+}
+
+.popup__title {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0 60px;
+
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.popup__text {
+  padding: 0 30px;
+  margin-bottom: 24px;
+
+  line-height: 30px;
+  color: $grey-dark;
+}
+
+.popup__form {
+  // color: yellow;
 }
