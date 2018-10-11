@@ -1,20 +1,18 @@
 // Продукт (catalog.html)
 
 .product {
+  margin-bottom: 28px;
+  border: 1px solid $grey;
+  word-wrap: break-word;
+}
+
+.product__content{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 
-  margin-bottom: 28px;
-  border: 1px solid $grey;
-  word-wrap: break-word;
-
   &:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  &:focus {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
 
