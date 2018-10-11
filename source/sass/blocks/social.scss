@@ -1,0 +1,21 @@
+// Социальные сети
+
+.social {
+  // color:yellow;
+}
+
+.social__list {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  padding: 25px 23px 14px 18px;
+}
+
+.social__link {
+  // color:yellow;
+}

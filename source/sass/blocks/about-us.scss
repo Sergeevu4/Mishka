@@ -1,0 +1,61 @@
+// О нас (index.html)
+
+.about-us {
+  padding: 44px 25px 0 25px;
+  margin-bottom: 55px;
+}
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 23px;
+
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.about-us__list {
+  @include list-reset;
+}
+
+.about-us__item {
+  margin-bottom: 20px;
+  padding-top: 63px;
+  padding-left: 5px;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+
+  background-repeat: no-repeat;
+
+  &--flower {
+    background-image: url("../../img/icon-feature-flower.svg");
+    background-position: 13px 8px;
+  }
+
+  &--banknote {
+    background-image: url("../../img/icon-feature-money.svg");
+    background-position: 5px 9px;
+  }
+
+  &--heart {
+    background-image: url("../../img/icon-feature-heart.svg");
+    background-position: 13px 14px;
+  }
+
+  &--ball {
+    background-image: url("../../img/icon-feature-ball.svg");
+    background-position: 8px 11px;
+  }
+
+  &--rocket {
+    background-image: url("../../img/icon-feature-rocket.svg");
+    background-position: 0 12px;
+  }
+
+  &--gift {
+    background-image: url("../../img/icon-feature-gift.svg");
+    background-position: 8px 10px;
+  }
+}

@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
     <header class="page-header">
       <a class="page-header__logo logo">
-        <img class="logo__image" src="http://placehold.it/86x35" alt="Логотип сайта Mishka">
+        <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип сайта Mishka">
       </a>
 
       <nav class="header-nav">
@@ -26,22 +27,25 @@
 
           <li class="header-nav__item">
             <a class="header-nav__link header-nav__link--search" href="#">
-              <img src="http://placehold.it/18x18" alt="">
+              <img src="img/icon-search.svg" alt="">
+                <!-- svg -->
               Поиск по сайту
             </a>
           </li>
 
           <li class="header-nav__item">
             <a class="header-nav__link header-nav__link--basket" href="#">
-              <img src="http://placehold.it/21x18" alt="">
+              <img src="img/icon-cart.svg" alt="">
+                <!-- svg -->
+
               Корзина: пока пуста
             </a>
           </li>
         </ul>
       </nav>
 
-      <div class="page-header__title-wrapper">
-        <h1 class="page-header__title">Милые штуки ручной работы для дома</h1>
+      <div class="page-header__title-wrapper page-header__title-wrapper--img">
+        <h1 class="page-header__title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
       </div>
     </header>
 
@@ -50,11 +54,11 @@
         <ul class="categories-nav__list">
 
           <li class="categories-nav__item">
-            <a class="categories-nav__link categories-nav__link--interior" href="#">Предметы интерьера</a>
+            <a class="categories-nav__link categories-nav__link--interior" href="#">Предметы<br>интерьера</a>
           </li>
 
           <li class="categories-nav__item">
-            <a class="categories-nav__link categories-nav__link--toys" href="#">Детские игрушки</a>
+            <a class="categories-nav__link categories-nav__link--toys" href="#">Детские<br>игрушки</a>
           </li>
 
         </ul>
@@ -81,7 +85,7 @@
             <td class="best-product__cell">15 см</td>
           </tr>
         </table>
-        <img class="best-product__img" src="http://placehold.it/260x315" alt="Фотография вязанной корзинки">
+        <img class="best-product__img" src="img/triple-set-mobile@1x.jpg" alt="Фотография вязанной корзинки">
         <div class="best-product__cost">Цена: 990 руб.</div>
         <a class="button best-product__button"  href="#">Заказать</a>
       </section>
@@ -89,17 +93,17 @@
       <section class="about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
           <ul class="about-us__list">
-            <li class="about-us__item about-us__item--flower">Экологически чистые материалы</li>
+            <li class="about-us__item about-us__item--flower">Экологически чистые&nbsp;материалы</li>
 
-            <li class="about-us__item about-us__item--banknote">Скандинавский стиль по российской цене</li>
+            <li class="about-us__item about-us__item--banknote">Скандинавский стиль по&nbsp;российской цене</li>
 
-            <li class="about-us__item about-us__item--heart">Увеличивает лайки на фотографиях</li>
+            <li class="about-us__item about-us__item--heart">Увеличивает лайки на&nbsp;фотографиях</li>
 
-            <li class="about-us__item about-us__item--ball">Связано вручную с любовью и умилением</li>
+            <li class="about-us__item about-us__item--ball">Связано вручную с любовью&nbsp;и умилением</li>
 
             <li class="about-us__item about-us__item--rocket">Поддержка отечественного производителя</li>
 
-            <li class="about-us__item about-us__item--gift">Поставляется в подарочной упаковке</li>
+            <li class="about-us__item about-us__item--gift">Поставляется в подарочной&nbsp;упаковке</li>
           </ul>
       </section>
 
@@ -111,11 +115,10 @@
             <blockquote class="reviews__blockquote">
               <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
 
-              <footer class="copyright">
-                <cite class="reviews__author">Анастасия Красильникова
-                  <span class="reviews__nickname">@misssssiskras</span>
-                </cite>
-              </footer>
+              <cite class="reviews__author">
+                <span class="reviews__author-name">Анастасия Красильникова</span>
+                <span class="reviews__author-nickname">@misssssiskras</span>
+              </cite>
             </blockquote>
           </li>
         </ul>
@@ -147,12 +150,12 @@
 
           <tr class="contacts-info__row">
             <td class="contacts-info__cell">адрес:</td>
-            <td class="contacts-info__cell">г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101</td>
+            <td class="contacts-info__cell">г. Санкт-Петербург,<br>ул. Большая<br>Конюшенная,<br> д. 19/8, офис 101</td>
           </tr>
 
         </table>
 
-        <img class="contacts__img" src="http://placehold.it/322x457" alt="Местоположение на карте">
+        <img class="contacts__img" src="img/map-mobile@1x.jpg" alt="Местоположение на карте">
 
         <a class="button contacts__button" href="#">Напишите нам</a>
       </section>
@@ -166,21 +169,21 @@
           <ul class="size-form__list">
 
             <li class="size-form__item">
-              <label class="size-form__label">S
-                <input class="size-form__input" type="radio" name="size-selection" value="S">
-              </label>
+              <input class="size-form__input visually-hidden" type="radio" id="size-s" name="size" value="S">
+
+              <label class="size-form__label" for="size-s">S</label>
             </li>
 
             <li class="size-form__item">
-              <label class="size-form__label">M
-                <input class="size-form__input" type="radio" name="size-selection" value="M">
-              </label>
+              <input class="size-form__input visually-hidden" type="radio" id="size-m" name="size" value="M">
+
+              <label class="size-form__label" for="size-m">M</label>
             </li>
 
             <li class="size-form__item">
-              <label class="size-form__label">L
-                <input class="size-form__input" type="radio" name="size-selection" value="L">
-              </label>
+              <input class="size-form__input visually-hidden" type="radio" id="size-l" name="size" value="L">
+
+              <label class="size-form__label" for="size-l">L</label>
             </li>
           </ul>
           <button class="button popup__button" type="submit">Добавить</button>
@@ -196,18 +199,27 @@
           <li class="social__item">
             <a class="social__link" href="https://www.instagram.com/">
               <span class="visually-hidden">instagram</span>
+
+              <img src="img/icon-insta.svg" alt="">
+              <!-- svg -->
             </a>
           </li>
 
           <li class="social__item">
             <a class="social__link" href="https://www.facebook.com/">
               <span class="visually-hidden">facebook</span>
+
+              <img src="img/icon-fb.svg" alt="">
+              <!-- svg -->
             </a>
           </li>
 
           <li class="social__item">
             <a class="social__link" href="https://twitter.com/">
               <span class="visually-hidden">twitter</span>
+
+              <img src="img/icon-twitter.svg" alt="">
+              <!-- svg -->
             </a>
           </li>
         </ul>
@@ -216,8 +228,12 @@
       <a class="page-footer__copyright" href="https://htmlacademy.ru/">
         <div class="page-footer__text">Разработано
           <span class="visually-hidden">htmlacademy</span>
+
+          <img src="img/htmlacademy.svg" alt="" width="27" height="34">
+          <!-- svg -->
         </div>
       </a>
     </footer>
   </body>
+  </div>
 </html>

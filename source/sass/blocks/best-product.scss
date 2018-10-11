@@ -1,0 +1,67 @@
+// Лучший продукт (index.html)
+
+.best-product {
+  padding: 1px 30px;
+  margin-bottom: 15px;
+}
+
+.best-product__title {
+  margin: 0;
+  margin-bottom: 4px;
+
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.best-product__sticker {
+  margin-bottom: 25px;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $green;
+}
+
+.best-product__desc {
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.best-product__table {
+  width: 260px;
+  margin-bottom: 27px;
+
+  line-height: 20px;
+  border-collapse: collapse;
+}
+
+.best-product__row {
+  // color: yellow;
+}
+
+.best-product__cell {
+  padding: 9px 29px 10px 0;
+  border-bottom: 1px solid $grey;
+  vertical-align: middle;
+}
+
+
+.best-product__img {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.best-product__cost {
+  width: 125px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.best-product__button {
+  margin-bottom: 10px;
+}

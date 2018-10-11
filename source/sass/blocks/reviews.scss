@@ -1,0 +1,103 @@
+// Отзывы (index.html)
+
+.reviews {
+  padding: 0 30px;
+  margin-bottom: 38px;
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 23px;
+
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.reviews__list {
+  @include list-reset;
+  margin-bottom: 26px;
+}
+
+.reviews__item {
+  margin-bottom: 20px;
+}
+
+.reviews__blockquote {
+  margin: 0;
+}
+
+.reviews__text {
+  margin: 0;
+  margin-bottom: 28px;
+
+  line-height: 30px;
+}
+
+.reviews__author {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.reviews__author-name {
+  margin-bottom: 3px;
+
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.reviews__author-nickname {
+  margin-bottom: 3px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+
+.reviews__buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 17px;
+}
+
+.reviews__button {
+  width: 130px;
+  min-height: 52px;
+  padding: 0;
+  margin-bottom: 20px;
+
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid $grey;
+
+  cursor: pointer;
+
+  &--prev {
+    background-image: url("../../img/icon-left-arrow.svg");
+  }
+
+  &--next {
+    background-image: url("../../img/icon-right-arrow.svg");
+  }
+
+  &--prev:hover,
+  &--next:hover {
+    opacity: 0.6;
+  }
+
+  &--prev:active,
+  &--next:active {
+    opacity: 0.3;
+  }
+}
+
+.reviews__button:nth-child(2n) {
+  border-left: none;
+}
+
+.reviews__button-write {
+  margin-bottom: 10px;
+}

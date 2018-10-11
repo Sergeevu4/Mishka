@@ -1,0 +1,53 @@
+// Форма размеров в popup
+
+.size-form {
+  // color: yellow;
+}
+
+.size-form__list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  margin-bottom: 31px;
+}
+
+.size-form__item {
+  // margin: 0 auto;
+}
+
+.size-form__input {
+  // color: yellow;
+}
+
+.size-form__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 82px;
+  min-height: 52px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  color: $grey-dark;
+
+  text-transform: uppercase;
+
+  border: 2px solid rgba($grey-dark, 0.1%);
+  cursor: pointer;
+
+  &:hover {
+    border-color: rgba($grey-dark, 0.3%);
+  }
+}
+
+.size-form__input:checked + .size-form__label {
+  border-color: $green-dark;
+}
+
+.popup__button {
+  margin: 0 auto;
+  margin-bottom: 10px;
+}

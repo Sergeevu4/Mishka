@@ -1,0 +1,35 @@
+// Контакты - Таблица (index.html)
+
+.contacts-info {
+  width: 260px;
+  border-collapse: collapse;
+
+  line-height: 30px;
+}
+
+.contacts-info__row {
+  // color: yellow;
+}
+
+.contacts-info__cell {
+  vertical-align: top;
+  padding-bottom: 29px;
+
+  &:first-child {
+    min-width: 75px;
+  }
+}
+
+
+.contacts-info__link-mail {
+  display: block;
+  border-bottom: 1px solid $green;
+
+  &:hover {
+    color: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

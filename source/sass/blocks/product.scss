@@ -1,0 +1,89 @@
+// Продукт (catalog.html)
+
+.product {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  margin-bottom: 28px;
+  border: 1px solid $grey;
+  word-wrap: break-word;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:focus {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.product__image {
+  display: flex;
+  margin-bottom: 27px;
+  background-color: $grey;
+}
+
+.product__link-title {
+  padding: 0 28px;
+
+  &:hover {
+    color: rgba($black, 0.6%);
+  }
+
+  &:active,
+  &:focus {
+    color: rgba($black, 0.3%);
+  }
+}
+
+.product__title {
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.product__desc {
+  position: relative;
+  margin-bottom: 16px;
+  padding: 0 28px;
+  padding-bottom: 25px;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+
+  color: $grey-dark;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 25px;
+    width: 204px;
+    height: 1px;
+    background-color: $grey;
+  }
+}
+
+.product__footer {
+  display: flex;
+  // flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.product__price {
+  padding-left: 28px;
+  font-weight: 700;
+}
+
+.product__price-button {
+  margin-left: auto;
+  margin-right: 21px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  // Нужно сделать активное состояние для svg внутри кнопки
+}

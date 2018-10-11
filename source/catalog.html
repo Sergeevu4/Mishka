@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
     <header class="page-header">
       <a class="page-header__logo logo"  href="index.html">
-        <img class="logo__image" src="http://placehold.it/86x35" alt="Логотип сайта Mishka">
+        <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип сайта Mishka">
       </a>
 
       <nav class="header-nav">
@@ -26,14 +27,18 @@
 
           <li class="header-nav__item">
             <a class="header-nav__link header-nav__link--search" href="#">
-              <img src="http://placehold.it/18x18" alt="">
+              <img src="img/icon-search.svg" alt="">
+                <!-- svg -->
+
               Поиск по сайту
             </a>
           </li>
 
           <li class="header-nav__item">
             <a class="header-nav__link header-nav__link--basket" href="#">
-              <img src="http://placehold.it/21x18" alt="">
+              <img src="img/icon-cart.svg" alt="">
+                <!-- svg -->
+
               Корзина: пока пуста
             </a>
           </li>
@@ -46,12 +51,14 @@
     </header>
 
     <main class="page-main">
+      <div class="catalog-wrapper">
+        <!-- Временный цетровщик -->
       <section class="products">
         <h2 class="visually-hidden">Каталог</h2>
         <ul class="products__list">
-          <li class="products__item product">
+          <li class="products__item product" tabindex="0">
             <a class="product__image" href="#">
-              <img src="http://placehold.it/260x195" alt="">
+              <img src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
             </a>
 
             <a class="product__link-title" href="#">
@@ -60,19 +67,19 @@
 
             <div class="product__desc">Рост 30 см, вес 200 г</div>
 
-            <footer class="product__price-footer">
+            <footer class="product__footer">
               <span class="product__price">1 200 руб.</span>
 
               <button class="product__price-button">
-                <img src="http://placehold.it/20x19" alt="">
+                <img src="img/icon-cart.svg" width="20" height="19" alt="">
                 <!-- svg -->
               </button>
             </footer>
           </li>
 
-          <li class="products__item product">
+          <li class="products__item product" tabindex="0">
             <a class="product__image" href="#">
-              <img src="http://placehold.it/260x195" alt="">
+              <img src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
             </a>
 
             <a class="product__link-title" href="#">
@@ -81,19 +88,19 @@
 
             <div class="product__desc">Диаметр 15 см, высота 10 см</div>
 
-            <footer class="product__price-footer">
+            <footer class="product__footer">
               <span class="product__price">690 руб.</span>
 
               <button class="product__price-button">
-                <img src="http://placehold.it/20x19" alt="">
-                <!-- svg -->
+                <img src="img/icon-cart.svg" width="20" height="19" alt="">
+                  <!-- svg -->
               </button>
             </footer>
           </li>
 
-          <li class="products__item product">
+          <li class="products__item product" tabindex="0">
             <a class="product__image" href="#">
-              <img src="http://placehold.it/260x195" alt="">
+              <img src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
             </a>
 
             <a class="product__link-title" href="#">
@@ -102,12 +109,12 @@
 
             <div class="product__desc">Диаметр 30 см, высота 30 см</div>
 
-            <footer class="product__price-footer">
+            <footer class="product__footer">
               <span class="product__price">1 500 руб.</span>
 
               <button class="product__price-button">
-                <img src="http://placehold.it/20x19" alt="">
-                <!-- svg -->
+                <img src="img/icon-cart.svg" width="20" height="19" alt="">
+                  <!-- svg -->
               </button>
             </footer>
           </li>
@@ -118,15 +125,15 @@
         <h2 class="make-products__title">Процесс производства</h2>
         <!--icon я добавлю через псевдоэлемент h2  -->
         <div class="make-products__video">
-          <img src="http://placehold.it/260x150" alt="">
+          <img src="img/video-mobile@1x.jpg" alt="">
 
-          <img src="http://placehold.it/101x82" alt="">
-          <!--       SVG     -->
+          <img class="make-products__video-icon" src="img/icon-play.svg" alt="">
+          <!-- svg -->
         </div>
-        <p class="make-products__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <p class="make-products__text">По просьбам наших любимых&nbsp;фолловеров мы сняли для вас подробное видео&nbsp;о том, как появляются наши товары.</p>
         <a class="button make-products__button-order" href="#">Сделать заказ</a>
       </section>
-
+      </div>
 
       <div class="popup">
         <h2 class="popup__title">Добавить в корзину</h2>
@@ -137,21 +144,21 @@
           <ul class="size-form__list">
 
             <li class="size-form__item">
-              <label class="size-form__label">S
-                <input class="size-form__input" type="radio" name="size-selection" value="S">
-              </label>
+              <input class="size-form__input visually-hidden" type="radio" id="size-s" name="size" value="S">
+
+              <label class="size-form__label" for="size-s">S</label>
             </li>
 
             <li class="size-form__item">
-              <label class="size-form__label">M
-                <input class="size-form__input" type="radio" name="size-selection" value="M">
-              </label>
+              <input class="size-form__input visually-hidden" type="radio" id="size-m" name="size" value="M">
+
+              <label class="size-form__label" for="size-m">M</label>
             </li>
 
             <li class="size-form__item">
-              <label class="size-form__label">L
-                <input class="size-form__input" type="radio" name="size-selection" value="L">
-              </label>
+              <input class="size-form__input visually-hidden" type="radio" id="size-l" name="size" value="L">
+
+              <label class="size-form__label" for="size-l">L</label>
             </li>
           </ul>
           <button class="button popup__button" type="submit">Добавить</button>
@@ -167,18 +174,27 @@
           <li class="social__item">
             <a class="social__link" href="https://www.instagram.com/">
               <span class="visually-hidden">instagram</span>
+
+              <img src="img/icon-insta.svg" alt="">
+              <!-- svg -->
             </a>
           </li>
 
           <li class="social__item">
             <a class="social__link" href="https://www.facebook.com/">
               <span class="visually-hidden">facebook</span>
+
+              <img src="img/icon-fb.svg" alt="">
+              <!-- svg -->
             </a>
           </li>
 
           <li class="social__item">
             <a class="social__link" href="https://twitter.com/">
               <span class="visually-hidden">twitter</span>
+
+              <img src="img/icon-twitter.svg" alt="">
+              <!-- svg -->
             </a>
           </li>
         </ul>
@@ -187,6 +203,9 @@
       <a class="page-footer__copyright" href="https://htmlacademy.ru/">
         <div class="page-footer__text">Разработано
           <span class="visually-hidden">htmlacademy</span>
+
+          <img src="img/htmlacademy.svg" alt="" width="27" height="34">
+          <!-- svg -->
         </div>
       </a>
     </footer>
