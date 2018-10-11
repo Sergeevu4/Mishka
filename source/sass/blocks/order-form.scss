@@ -45,20 +45,21 @@
 }
 
 .order-form__label {
+  display: block;
+
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
-}
-
-.order-form__label-radio {
-  position: relative;
-  display: block;
-  min-height: 50px;
-  padding-top: 10px;
-  padding-left: 62px;
 
   user-select: none;
   cursor: pointer;
+}
+
+.order-form__label--radio {
+  position: relative;
+  min-height: 50px;
+  padding-top: 10px;
+  padding-left: 62px;
 
   &::before {
     content: "";
@@ -84,22 +85,22 @@
   }
 }
 
-.order-form__input:checked + .order-form__label-radio::before {
+.order-form__input:checked + .order-form__label--radio::before {
   width: 40px;
   height: 40px;
   background-color: $green;
   box-shadow: inset 0 0 0 10px $white;
 }
 
-.order-form__label-checkbox {
+.order-form__label--checkbox {
   position: relative;
-  display: block;
+  // display: block;
   min-height: 50px;
   padding-top: 12px;
   padding-left: 62px;
 
-  user-select: none;
-  cursor: pointer;
+  // user-select: none;
+  // cursor: pointer;
 
   &::before {
     content: "";
@@ -124,21 +125,21 @@
   }
 }
 
-.order-form__input:checked + .order-form__label-checkbox::before {
+.order-form__input:checked + .order-form__label--checkbox::before {
   background-image: url("../../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 16px;
 }
 
-.order-form__input:focus + .order-form__label-radio::before,
-.order-form__input:focus + .order-form__label-checkbox::before {
+.order-form__input:focus + .order-form__label--radio::before,
+.order-form__input:focus + .order-form__label--checkbox::before {
   border-style: dotted;
   border-color: $green;
 }
 
-.order-form__label-text {
-  display: block;
+.order-form__label--text {
+  // display: block;
   margin-bottom: 8px;
   padding-top: 5px;
 }
@@ -165,8 +166,9 @@
 }
 
 .order-form__input--contact {
-  position: relative;
-  margin-top: 20px;
+  // position: relative;
+  padding-right: 45px;
+  // margin-bottom: 20px;
 }
 
 .order-form__icon {
@@ -178,6 +180,7 @@
 .order-form__textarea {
   width: 260px;
   min-height: 142px;
+  padding: 14px;
   margin-top: 20px;
 
   border: 2px solid $grey-dark;
@@ -200,7 +203,6 @@
 
 .order-form__tooltip {
   margin-bottom: 40px;
-
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;

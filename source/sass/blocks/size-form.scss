@@ -13,10 +13,6 @@
   margin-bottom: 31px;
 }
 
-.size-form__label {
-  // color: yellow;
-}
-
 .size-form__item {
   // margin: 0 auto;
 }
@@ -25,7 +21,7 @@
   // color: yellow;
 }
 
-.size-form__label-radio {
+.size-form__label {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,16 +35,15 @@
 
   text-transform: uppercase;
 
-  border: 2px solid rgba(68, 68, 68, 0.1);
-  // border-color: rgba($grey-dark, 0.1%);
+  border: 2px solid rgba($grey-dark, 0.1%);
   cursor: pointer;
 
   &:hover {
-    border-color: rgba(68, 68, 68, 0.3);
+    border-color: rgba($grey-dark, 0.3%);
   }
 }
 
-.size-form__input:checked + .size-form__label-radio {
+.size-form__input:checked + .size-form__label {
   border-color: $green-dark;
 }
 
