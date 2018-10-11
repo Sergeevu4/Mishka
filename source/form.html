@@ -123,22 +123,22 @@
 
             <ul class="order-form__list">
               <li class="order-form__item">
-                <label class="order-form__label order-form__label--text" for="name">Имя:</label>
+                <label class="order-form__label order-form__label--text" for="order-form-name">Имя:</label>
 
-                <input class="order-form__input" type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
+                <input class="order-form__input" type="text" id="order-form-name" name="name" placeholder="Введите ваше имя*" required>
 
               </li>
 
               <li class="order-form__item">
-                <label class="order-form__label order-form__label--text" for="family-name">Фамилия:</label>
+                <label class="order-form__label order-form__label--text" for="order-form-family-name">Фамилия:</label>
 
-                <input class="order-form__input" type="text" id="family-name" name="family-name" placeholder="Укажите фамилию*" required>
+                <input class="order-form__input" type="text" id="order-form-family-name" name="family-name" placeholder="Укажите фамилию*" required>
               </li>
 
               <li class="order-form__item">
-                <label class="order-form__label order-form__label--text" for="middle-name">Отчество:</label>
+                <label class="order-form__label order-form__label--text" for="order-form-middle-name">Отчество:</label>
 
-                <input class="order-form__input" type="text" id="middle-name" name="middle-name" placeholder="Отчество, если желаете">
+                <input class="order-form__input" type="text" id="order-form-middle-name" name="middle-name" placeholder="Отчество, если желаете">
               </li>
             </ul>
           </fieldset>
@@ -146,21 +146,25 @@
           <div class="order-form__group">
             <label class="order-form__title" for="contact-tel">Тел</label>
 
-            <input class="order-form__input order-form__input--contact" type="tel" id="contact-tel" name="telephone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <div class="order-form__wrapper-contact">
+              <input class="order-form__input order-form__input--contact" type="tel" id="contact-tel" name="telephone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
 
-            <img class="order-form__icon" src="img/icon-phone.svg" alt="">
+              <img class="order-form__icon" src="img/icon-phone.svg" alt="">
             <!-- svg -->
             <!-- Временный класс -->
+            </div>
           </div>
 
           <div class="order-form__group">
             <label class="order-form__title" for="contact-email">E-mail</label>
 
-            <input class="order-form__input order-form__input--contact" type="contact-email"  name="email" placeholder="Ваш Email*" required>
+            <div class="order-form__wrapper-contact">
+              <input class="order-form__input order-form__input--contact" type="contact-email"  name="email" placeholder="Ваш Email*" required>
 
-            <img class="order-form__icon" src="img/icon-mail.svg" alt="">
-            <!-- svg -->
-            <!-- Временный класс -->
+              <img class="order-form__icon" src="img/icon-mail.svg" alt="">
+              <!-- svg -->
+              <!-- Временный класс -->
+            </div>
           </div>
 
           <div class="order-form__group">
