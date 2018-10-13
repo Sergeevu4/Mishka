@@ -1,14 +1,15 @@
 //Шапка сайта
 
 .page-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // flex-wrap: wrap;
 }
 
 .page-header__logo {
+  display: block;
   width: 86px;
   // min-height: 80px;
   // тут у меня возникла трудность касаемо того о не правильности использования min-height, и width. Возможно следует воспользоваться flex-basis (для дальнейшего перестроения)
@@ -21,10 +22,12 @@
 }
 
 .page-header__title-wrapper {
-  width: 320px;
+  // width: 320px;
   min-height: 177px;
-  padding: 71px 20px 10px 20px;
-  margin-bottom: 30px;
+  // padding: 71px 20px 10px 20px;
+  padding-top: 71px;
+  padding-bottom: 20px;
+  // margin-bottom: 30px;
 
   background-color: $grey;
   text-align: center;
@@ -35,12 +38,13 @@
   background-repeat: no-repeat;
   background-position: center;
   min-height: 283px;
-  margin: 0;
+  // margin: 0;
 }
 
 .page-header__title {
-  margin: 0;
+  width: 320px;
 
+  margin: 0 auto;
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;

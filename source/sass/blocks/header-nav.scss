@@ -1,7 +1,7 @@
 // Основная навигация
 
 .header-nav {
-  width: 100%;
+  // width: 100%;
   position: relative;
 
   font-size: 17px;
@@ -48,11 +48,11 @@
 
 .header-nav__link {
   position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 75px;
-  min-height: 79px;
+  display: block;
+
+  padding: 28px 5px 27px 76px;
+  // padding-left: 75px;
+  // min-height: 79px;
 
   &:hover {
     opacity: 0.6;
