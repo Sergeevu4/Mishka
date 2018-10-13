@@ -1,51 +1,33 @@
 // source\sass\blocks\page-header.scss
 
-// Подключение (normalize)
+// ******************** Глобальные стили *******************
+// Глобальные стили:(normalize), Переменные, Mixin, Шрифт, (html, body)
 @import "global/normalize.scss";
-
-// Переменные (variables)
 @import "global/variables.scss";
-
-// Mixin
 @import "global/mixins.scss";
-
-// Шрифт
 @import "global/font.scss";
-
-// Глобальные стили (html, body)
 @import "global/base.scss";
+// Центровщики
+@import "blocks/container";
 
 // Основные стили для кнопки
 @import "blocks/button";
 
-// Шапка сайта (header)
-@import "blocks/page-header";
 
-// Основная навигация
+// ******************** header (Шапка) *********************
+@import "blocks/page-header";
 @import "blocks/header-nav";
 
-// Навигация по сайту (index.html)
+// ******************** index.html *************************
 @import "blocks/categories-nav";
-
-// Лучший продукт (index.html)
 @import "blocks/best-product";
-
-// О нас (index.html)
 @import "blocks/about-us";
-
-// Отзывы (index.html)
 @import "blocks/reviews";
-
-// Контакты (index.html)
 @import "blocks/contacts";
-
-// Контакты - Таблица (index.html)
 @import "blocks/contacts-info";
 
-// Подвал
+// ******************** footer.html ************************
 @import "blocks/page-footer";
-
-// Социальные сети
 @import "blocks/social";
 
 // ******************** popup ******************************
