@@ -13,26 +13,27 @@
 
 .order-form__title {
   display: block;
-  position: relative;
-
+  width: 100%;
   margin-bottom: 24px;
+
+  background-image: linear-gradient($green 1px, transparent 1px);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: 100% 5px;
+}
+
+.order-form__title-text {
+  display: inline-flex;
+  min-width: 62px;
+
+  padding-right: 19px;
+  background-color: white;
 
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
   color: $green;
   text-transform: uppercase;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 7px;
-    left: 61px;
-
-    width: 200px;
-    height: 1px;
-    background-color: $green;
-  }
 }
 
 .order-form__list {
@@ -204,7 +205,6 @@
     border-color: $green;
   }
 }
-
 
 .order-form__tooltip {
   margin-bottom: 40px;
