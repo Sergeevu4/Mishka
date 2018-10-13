@@ -1,11 +1,17 @@
 // Процесс производства (catalog.html)
 
 .make-products {
-  border: 1px solid $grey;
-  padding-top: 26px;
-  padding-bottom: 28px;
+  padding: 0 30px;
+
   margin-bottom: 58px;
+
+
   word-wrap: break-word;
+}
+
+.make-products-wrapper{
+  border: 1px solid $grey;
+  padding: 26px 0 28px 0;
 }
 
 .make-products__title {
