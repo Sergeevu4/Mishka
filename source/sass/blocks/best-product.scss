@@ -1,8 +1,12 @@
 // Лучший продукт (index.html)
 
 .best-product {
+  position: relative;
   padding: 1px 30px;
+  padding-top: 26px;
   margin-bottom: 15px;
+
+  word-wrap: break-word;
 }
 
 .best-product__title {
@@ -24,7 +28,7 @@
   color: $green;
 }
 
-.best-product__desc {
+.best-product__text {
   margin: 0;
   margin-bottom: 18px;
 }
@@ -47,21 +51,175 @@
   vertical-align: middle;
 }
 
+.best-product__img-wrapper {
+  margin-bottom: 140px;
+}
 
 .best-product__img {
   display: block;
-  margin-bottom: 25px;
+}
+
+.best-product__cost-wrapper {
+  position: absolute;
+  bottom: 15px;
+  left: 30px;
 }
 
 .best-product__cost {
   width: 125px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  min-height: 50px;
 
   font-size: 17px;
   font-weight: 700;
 }
 
 .best-product__button {
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
+}
+
+@media (min-width: $tablet) {
+  .best-product {
+    padding: 0;
+    padding-top: 50px;
+    // margin-bottom: 15px;
+    // flex-wrap: wrap;
+  }
+
+  .best-product__title-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: baseline;
+    margin-bottom: 49px;
+  }
+
+  .best-product__title {
+    width: 540px;
+    margin: 0;
+
+    font-size: 43px;
+    line-height: 50px;
+    margin-left: -4px;
+    // Знаю вы говорили что плохо использовать отрицательный mragin, но подругому я не попадал идеально.
+  }
+
+  .best-product__sticker {
+    width: 117px;
+    margin: 0;
+    margin-left: auto;
+    line-height: 17px;
+    padding-top: 12px;
+    padding-right: 10px;
+    text-align: center;
+  }
+
+  .best-product__desc-wrapper {
+    display: flex;
+  }
+
+
+  .best-product__desc {
+    width: 333px;
+  }
+
+  .best-product__text {
+    width: 282px;
+    margin: 0;
+    margin-bottom: 36px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .best-product__table {
+    width: 291px;
+    margin-bottom: 56px;
+  }
+
+  .best-product__cell {
+    padding-right: 0;
+  }
+
+  .best-product__cost-wrapper {
+    position: static;
+    width: 290px;
+  }
+
+  .best-product__cost {
+    width: 147px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .best-product__button {
+    width: 289px;
+  }
+
+
+  .best-product__img-wrapper {
+    height: 412px;
+    width: 332px;
+    background-color: #f1f1f1;
+    // Временная высота для картинки
+    margin-bottom: 0;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .best-product {
+    position: relative;
+    padding-top: 76px;
+    padding-left: 173px;
+    // margin-bottom: 15px;
+    // flex-wrap: wrap;
+  }
+
+  .best-product__title-wrapper {
+    position: absolute;
+    top: 128px;
+    left: 28px;
+    margin-bottom: 0;
+  }
+
+  .best-product__title {
+    order: 1;
+    margin-left: 0;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .best-product__sticker {
+    order: -1;
+    width: 141px;
+    margin-left: 0;
+    padding-top: 15px;
+    padding-right: 32px;
+  }
+
+  .best-product__desc {
+    width: 352px;
+  }
+
+  .best-product__text {
+    width: 282px;
+
+    padding-top: 157px;
+    margin-bottom: 49px;
+  }
+
+  .best-product__table {
+    margin-bottom: 110px;
+  }
+
+  .best-product__button {
+    width: 292px;
+  }
+
+  .best-product__img-wrapper {
+    height: 636px;
+    width: 525px;
+  }
 }
