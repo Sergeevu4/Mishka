@@ -2,8 +2,6 @@
 
 .categories-nav {
   width: 320px;
-  margin: 0 auto;
-  margin-bottom: 26px;
   min-height: 200px;
   font-size: 19px;
   font-weight: 700;
@@ -25,18 +23,21 @@
 
 .categories-nav__link {
   display: block;
-  padding: 25px 25px 30px 29px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 25px 90px 30px 29px;
+  // padding: 8% 30% 9% 9%;
 
   &--interior {
     background-image: url("../../img/icon-interior.svg");
     background-repeat: no-repeat;
-    background-position: 243px 22px;
+    background-position: 87% 55%;
   }
 
   &--toys {
     background-image: url("../../img/icon-toy.svg");
     background-repeat: no-repeat;
-    background-position: 232px 22px;
+    background-position: 90% 52%;
   }
 
   &:hover {
@@ -45,5 +46,65 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet) {
+  .categories-nav {
+    width: 668px;
+    min-height: 0;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .categories-nav__list {
+    display: flex;
+    justify-content: space-betwen;
+    flex-wrap: wrap;
+  }
+
+  .categories-nav__item {
+    // flex-grow: 1;
+    // можно было использовать это свойство
+  }
+
+  .categories-nav__link {
+    width: 334px;
+    padding: 27px 105px 27px 36px;
+    // padding: 8% 30% 8% 11%;
+
+    &--interior {
+      background-position: 88% 55%;
+    }
+
+    &--toys {
+      background-position: 88% 55%;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .categories-nav {
+    width: 1050px;
+    min-height: 0;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+
+  .categories-nav__link {
+    width: 525px;
+    // padding: 28px 105px 27px 36px;
+    padding: 28px 105px 26px 37px;
+
+    &--interior {
+      background-position: 92% 57%;
+    }
+
+    &--toys {
+      background-position: 92% 61%;
+    }
   }
 }
