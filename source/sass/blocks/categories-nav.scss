@@ -71,15 +71,15 @@
 
   .categories-nav__link {
     width: 334px;
-    padding: 27px 105px 27px 36px;
+    padding: 28px 105px 42px 36px;
     // padding: 8% 30% 8% 11%;
 
     &--interior {
-      background-position: 88% 55%;
+      background-position: 88% 45%;
     }
 
     &--toys {
-      background-position: 88% 55%;
+      background-position: 88% 46%;
     }
   }
 }
@@ -93,18 +93,17 @@
     line-height: 30px;
   }
 
-
   .categories-nav__link {
     width: 525px;
     // padding: 28px 105px 27px 36px;
-    padding: 28px 105px 26px 37px;
+    padding: 28px 105px 42px 36px;
 
     &--interior {
-      background-position: 92% 57%;
+      background-position: 92% 45%;
     }
 
     &--toys {
-      background-position: 92% 61%;
+      background-position: 92% 45%;
     }
   }
 }
