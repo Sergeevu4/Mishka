@@ -63,12 +63,10 @@
 }
 
 @media (min-width: $tablet) {
-
   .page-header__title-wrapper--img {
     position: relative;
     display: flex;
     flex-direction: column;
-    // margin: 0 auto;
     justify-content: space-between;
 
     height: 757px;
@@ -86,7 +84,6 @@
       background-repeat: repeat-x;
       background-size: auto 23px;
       z-index: 10;
-
     }
   }
 
