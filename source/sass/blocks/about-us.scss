@@ -1,8 +1,35 @@
 // О нас (index.html)
 
 .about-us {
-  padding: 40px 25px 0 25px;
-  margin-bottom: 55px;
+  padding-top: 33px;
+  margin-bottom: 56px;
+
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: top;
+  background-size: auto 6px;
+
+  @media (min-width: $tablet) {
+    padding-top: 66px;
+    background-size: auto 17px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 81px;
+    background-size: auto 23px;
+  }
+}
+
+.about-us__wrapper {
+  padding: 0 25px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 173px;
+  }
 }
 
 .about-us__title {
@@ -12,10 +39,29 @@
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
+
+  @media (min-width: $tablet) {
+    margin-left: -5px;
+    margin-bottom: 41px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .about-us__list {
   @include list-reset;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+  }
 }
 
 .about-us__item {
@@ -26,36 +72,76 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
-
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet) {
+    width: 300px;
+    padding-top: 63px;
+    padding-left: 0;
+    margin-bottom: 47px;
+    margin-right: auto;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
 
   &--flower {
     background-image: url("../../img/icon-feature-flower.svg");
     background-position: 13px 8px;
+
+    @media (min-width: $tablet) {
+      order: 1;
+      background-position: 9px 8px;
+    }
   }
 
   &--banknote {
     background-image: url("../../img/icon-feature-money.svg");
     background-position: 5px 9px;
+
+    @media (min-width: $tablet) {
+      order: 3;
+      background-position: 1px 9px;
+    }
   }
 
   &--heart {
     background-image: url("../../img/icon-feature-heart.svg");
     background-position: 13px 14px;
+
+    @media (min-width: $tablet) {
+      order: 5;
+      background-position: 8px 15px;
+    }
   }
 
   &--ball {
     background-image: url("../../img/icon-feature-ball.svg");
-    background-position: 8px 11px;
+    background-position: 9px 11px;
+
+    @media (min-width: $tablet) {
+      order: 2;
+      background-position: 4px 11px;
+    }
   }
 
   &--rocket {
     background-image: url("../../img/icon-feature-rocket.svg");
     background-position: 0 12px;
+
+    @media (min-width: $tablet) {
+      order: 4;
+      background-position: 0 12px;
+    }
   }
 
   &--gift {
     background-image: url("../../img/icon-feature-gift.svg");
     background-position: 8px 10px;
+
+    @media (min-width: $tablet) {
+      order: 6;
+      background-position: 3px 12px;
+    }
   }
 }
