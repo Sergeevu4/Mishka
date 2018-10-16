@@ -55,12 +55,13 @@
   vertical-align: middle;
 }
 
-.best-product__img-wrapper {
-  margin-bottom: 140px;
-}
+// .best-product__img-wrapper {
+//   margin-bottom: 140px;
+// }
 
 .best-product__img {
   display: block;
+  margin-bottom: 140px;
 }
 
 .best-product__cost-wrapper {
@@ -103,7 +104,6 @@
     font-size: 43px;
     line-height: 50px;
     margin-left: -4px;
-    // Знаю вы говорили что плохо использовать отрицательный mragin, но подругому я не попадал идеально.
   }
 
   .best-product__sticker {
@@ -158,21 +158,17 @@
     width: 289px;
   }
 
-  .best-product__img-wrapper {
-    height: 412px;
-    width: 332px;
-    background-color: #f1f1f1;
-    // Временная высота для картинки
+  .best-product__img {
+    width: 333px;
+    height: 404px;
+    margin-top: 9px;
     margin-bottom: 0;
+    background-color: #f1f1f1;
   }
 }
 
 @media (min-width: $desktop) {
   .best-product {
-    // position: relative;
-    // padding-top: 60px;
-    // padding-left: 173px;
-
     padding-top: 112px;
     display: flex;
     flex-direction: column;
@@ -180,23 +176,17 @@
   }
 
   .best-product__title-wrapper {
-    // position: absolute;
-    // top: 112px;
-    // left: 28px;
     margin-bottom: 0;
   }
 
   .best-product__title {
     width: 878px;
     order: 1;
+    z-index: 1;
     margin-left: 0;
 
     font-size: 53px;
     line-height: 57px;
-  }
-
-  .best-product__desc-wrapper {
-    margin-left: auto;
   }
 
   .best-product__sticker {
@@ -204,12 +194,18 @@
     width: 172px;
     margin-left: 0;
     padding-top: 15px;
-    padding-right: 31px;
+    padding-right: 30px;
     padding-left: 23px;
+  }
+
+  .best-product__desc-wrapper {
+    position: relative;
+    margin-left: 172px;
   }
 
   .best-product__desc {
     width: 352px;
+    z-index: 1;
   }
 
   .best-product__text {
@@ -227,20 +223,13 @@
     width: 292px;
   }
 
-  .best-product__img-wrapper {
-    // height: 636px;
-    width: 525px;
-    position: relative;
-    z-index: -1;
-  }
-
   .best-product__img {
-    // width: 525px;
-    // height: 636px;
+    width: 525px;
+    height: 636px;
 
+    margin-top: 0;
     position: absolute;
-    top: -109px;
-    left: 0;
-    // z-index: -3;
+    right: 0;
+    top: -112px;
   }
 }
