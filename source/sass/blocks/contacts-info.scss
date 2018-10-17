@@ -16,6 +16,7 @@
 
   @media (min-width: $desktop) {
     width: 350px;
+    margin-left: 118px;
   }
 }
 
@@ -26,7 +27,8 @@
   }
 
   @media (min-width: $desktop) {
-    margin-left: 117px;
+    flex-wrap: no-wrap;
+    display: table;
   }
 }
 

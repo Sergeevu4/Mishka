@@ -12,7 +12,8 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet) {
-    min-height: 143px;
+    // min-height: 143px;
+    padding: 50px 0;
     flex-direction: row;
   }
 }
