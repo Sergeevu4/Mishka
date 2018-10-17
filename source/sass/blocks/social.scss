@@ -1,21 +1,32 @@
 // Социальные сети
 
 .social {
-  // color:yellow;
-}
-
-.social__list {
   @include list-reset;
+
   display: flex;
+  width: 260px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet) {
+    width: 142px;
+    justify-content: space-between;
+    padding-top: 8px;
+    border-bottom: none;
+  }
 }
 
 .social__item {
-  padding: 25px 23px 14px 18px;
+  padding: 27px 23px 20px 18px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
 }
 
 .social__link {
-  // color:yellow;
+  //color:yellow;
 }
