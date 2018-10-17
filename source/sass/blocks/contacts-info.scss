@@ -5,25 +5,80 @@
   border-collapse: collapse;
 
   line-height: 30px;
+  color: #444444;
+
+  @media (min-width: $tablet) {
+    width: 670px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 350px;
+  }
+}
+
+.contacts-info__tbody {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 117px;
+  }
 }
 
 .contacts-info__row {
   // color: yellow;
+  @media (min-width: $tablet) {
+    display: flex;
+
+    &:nth-child(2n) {
+      margin-left: 37px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &:nth-child(2n) {
+      margin-left: 0;
+    }
+  }
+}
+
+.contacts-info__br {
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .contacts-info__cell {
   vertical-align: top;
   padding-bottom: 29px;
 
+  @media (min-width: $tablet) {
+    padding-right: 21px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-right: 0;
+    min-width: 245px;
+  }
+
   &:first-child {
     min-width: 75px;
   }
 }
 
-
 .contacts-info__link-mail {
   display: block;
   border-bottom: 1px solid $green;
+
+  @media (min-width: $desktop) {
+    width: 205px;
+  }
+
 
   &:hover {
     color: $green;
