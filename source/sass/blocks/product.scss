@@ -1,15 +1,59 @@
 // Продукт (catalog.html)
 
 .product {
-  margin-bottom: 28px;
   border: 1px solid $grey;
-  word-wrap: break-word;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+  }
+}
+
+.product__link-image {
+  display: block;
+  background-color: $grey;
+
+  @media (min-width: $tablet) {
+    // width: 50%;
+    width: 334px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 315px;
+  }
+}
+
+.product__image {
+  display: block;
+
+  @media (min-width: $tablet) {
+    height: 334px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 462px;
+  }
 }
 
 .product__content {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  padding: 27px;
+
+  @media (min-width: $tablet) {
+    width: 334px;
+    // width: 50%;
+    padding: 25px 27px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 315px;
+    height: 100%;
+  }
 
   &:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
@@ -20,14 +64,8 @@
   }
 }
 
-.product__image {
-  display: flex;
-  margin-bottom: 27px;
-  background-color: $grey;
-}
-
 .product__link-title {
-  padding: 0 28px;
+  margin-bottom: 5px;
 
   &:hover {
     color: rgba($black, 0.6%);
@@ -41,17 +79,18 @@
 
 .product__title {
   margin: 0;
-  margin-bottom: 5px;
 
   font-size: 17px;
   font-weight: 700;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
 }
 
 .product__desc {
-  position: relative;
-  margin-bottom: 16px;
-  padding: 0 28px;
-  padding-bottom: 25px;
+  // position: relative;
+  margin-bottom: 20px;
 
   font-size: 13px;
   font-weight: 400;
@@ -59,31 +98,45 @@
 
   color: $grey-dark;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 5px;
-    left: 25px;
-    width: 204px;
-    height: 1px;
-    background-color: $grey;
+  @media (min-width: $tablet) {
+    font-size: 15px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 15px;
   }
 }
 
 .product__footer {
   display: flex;
-  // flex-wrap: wrap;
-  margin-bottom: 25px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+
+  border-top: 1px solid $grey;
+
+  @media (min-width: $tablet) {
+    padding-top: 24px;
+    margin-top: auto;
+  }
 }
 
 .product__price {
-  padding-left: 28px;
   font-weight: 700;
+
+  @media (min-width: $tablet) {
+    padding-left: 4px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 0;
+  }
 }
 
 .product__price-button {
   margin-left: auto;
-  margin-right: 21px;
+  padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
