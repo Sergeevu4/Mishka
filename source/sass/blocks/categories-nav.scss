@@ -2,7 +2,6 @@
 
 .categories-nav {
   width: 320px;
-  min-height: 200px;
   font-size: 19px;
   font-weight: 700;
   line-height: 24px;
@@ -52,7 +51,6 @@
 @media (min-width: $tablet) {
   .categories-nav {
     width: 668px;
-    min-height: 0;
 
     font-size: 20px;
     line-height: 30px;
