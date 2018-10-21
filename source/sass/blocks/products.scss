@@ -23,23 +23,16 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;
-    // flex-wrap: wrap;
-    // align-content: space-between;
   }
 
   @media (min-width: $desktop) {
     flex-direction: row;
     flex-wrap: wrap;
-    //align-content: space-between;
   }
 }
 
 .products__item {
   margin-bottom: 30px;
-
-  // &:last-child {
-  //   margin-bottom: 0;
-  // }
 
   @media (min-width: $tablet) {
     margin-bottom: 52px;
