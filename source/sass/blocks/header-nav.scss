@@ -1,18 +1,19 @@
 // Основная навигация
 
 .header-nav {
-  width: 100%;
+  // width: 100%;
   position: relative;
 
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+  word-wrap: break-word;
 }
 
 .header-nav__toggle {
   position: absolute;
-  top: -47px;
-  right: 15px;
+  top: -48px;
+  right: 31px;
 
   width: 20px;
   height: 14px;
@@ -36,9 +37,9 @@
 
 .header-nav__list {
   @include list-reset;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-direction: column;
+  // flex-wrap: wrap;
 }
 
 .header-nav__item {
@@ -47,10 +48,12 @@
 }
 
 .header-nav__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 79px;
+  position: relative;
+  display: block;
+
+  padding: 28px 5px 27px 76px;
+  // padding-left: 75px;
+  // min-height: 79px;
 
   &:hover {
     opacity: 0.6;
@@ -61,6 +64,8 @@
   }
 }
 
-.header-nav__link img {
-  display: block;
+.header-nav__icon {
+  position: absolute;
+  top: 31px;
+  left: 31px;
 }

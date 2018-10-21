@@ -5,15 +5,17 @@
   width: 260px;
   padding: 14px 0 14px 0;
   border: 2px solid $grey-dark;
-  background-color: $white;
+  background-color: transparent;
 
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  color: $grey-dark;
 
   cursor: pointer;
+  word-wrap: break-word;
 
   &:hover {
     color: $white;

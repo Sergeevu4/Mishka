@@ -1,59 +1,183 @@
 // Процесс производства (catalog.html)
 
 .make-products {
-  border: 1px solid $grey;
-  padding-top: 26px;
-  padding-bottom: 28px;
+  padding: 0 30px;
   margin-bottom: 58px;
   word-wrap: break-word;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 106px;
+  }
+}
+
+.make-products-wrapper {
+  border: 1px solid $grey;
+  padding: 24px 0 28px 0;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 0 41px 0;
+  }
+
+  @media (min-width: $desktop) {
+    // flex-direction: row;
+    position: relative;
+    padding: 0 0 54px 679px;
+  }
 }
 
 .make-products__title {
   position: relative;
+  padding: 0 23px 0 90px;
   margin: 0;
-  margin-bottom: 23px;
-  padding-left: 90px;
-  padding-right: 23px;
+  margin-bottom: 24px;
 
   font-size: 17px;
   font-weight: 700;
 
   &::before {
     content: "";
-    width: 32px;
-    height: 32px;
     position: absolute;
     left: 34px;
     top: 5px;
+    width: 32px;
+    height: 32px;
+
     background-image: url("../../img/icon-video.svg");
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet) {
+    order: 2;
+
+    padding: 10px 23px 0 105px;
+    margin-bottom: 32px;
+
+    font-size: 20px;
+
+    &::before {
+      left: 41px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 98px 50px 0 80px;
+
+    &::before {
+      top: 44px;
+      left: 81px;
+    }
   }
 }
 
 .make-products__video {
   position: relative;
-  display: flex;
+  // display: flex;
   margin-bottom: 27px;
+
+  @media (min-width: $tablet) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.make-products__video-image {
+  display: block;
+
+  @media (min-width: $tablet) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 682px;
+    height: 455px;
+  }
 }
 
 .make-products__video-icon {
   position: absolute;
-  top: 37px;
-  left: 81px;
-  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  cursor: pointer;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+.make-products__text-wrapper {
+  padding: 0 33px;
+
+  @media (min-width: $tablet) {
+    order: 3;
+
+    padding: 0 41px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 58px 0 81px;
+  }
 }
 
 .make-products__text {
   margin: 0;
-  margin-bottom: 25px;
-  padding: 0 34px;
+  margin-bottom: 26px;
+
   font-size: 13px;
   font-weight: 400;
   color: $grey-dark;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 35px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 47px;
+  }
 }
 
 .make-products__button-order {
-  width: 192px;
-  margin: 0 auto;
-  margin-bottom: 5px;
+  width: auto;
+  // margin: 0 auto;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet) {
+    width: auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: auto;
+  }
 }

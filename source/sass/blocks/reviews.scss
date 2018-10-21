@@ -1,8 +1,29 @@
 // Отзывы (index.html)
 
 .reviews {
+  width: 320px;
+  margin: 0 auto;
   padding: 0 30px;
-  margin-bottom: 38px;
+  margin-bottom: 46px;
+
+  word-wrap: break-word;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    width: 768px;
+    padding: 78px 48px 50px 48px;
+    margin-bottom: 34px;
+
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    // background-position: left;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1051px;
+    padding: 71px 0 65px 171px;
+    margin-bottom: 68px;
+  }
 }
 
 .reviews__title {
@@ -12,6 +33,20 @@
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
+
+  @media (min-width: $tablet) {
+    width: 490px;
+    margin-bottom: 48px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 650px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .reviews__list {
@@ -19,9 +54,9 @@
   margin-bottom: 26px;
 }
 
-.reviews__item {
-  margin-bottom: 20px;
-}
+// .reviews__item {
+//   margin-bottom: 20px;
+// }
 
 .reviews__blockquote {
   margin: 0;
@@ -32,12 +67,30 @@
   margin-bottom: 28px;
 
   line-height: 30px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 57px;
+    font-size: 17px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 779px;
+    margin-bottom: 39px;
+  }
 }
 
 .reviews__author {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet) {
+    width: 493px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 640px;
+  }
 }
 
 .reviews__author-name {
@@ -46,6 +99,10 @@
   font-size: 17px;
   font-weight: 700;
   font-style: normal;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+  }
 }
 
 .reviews__author-nickname {
@@ -53,13 +110,28 @@
   letter-spacing: 1px;
   font-weight: 400;
   line-height: 30px;
-}
 
+  @media (min-width: $tablet) {
+    font-size: 17px;
+  }
+}
 
 .reviews__buttons-wrapper {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 17px;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    bottom: 80px;
+    right: 53px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    bottom: 97px;
+    right: 4px;
+  }
 }
 
 .reviews__button {
@@ -68,12 +140,18 @@
   padding: 0;
   margin-bottom: 20px;
 
-  background-color: $white;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid $grey;
 
   cursor: pointer;
+
+  @media (min-width: $tablet) {
+    width: 85px;
+    margin-bottom: 0;
+    border: none;
+  }
 
   &--prev {
     background-image: url("../../img/icon-left-arrow.svg");
@@ -100,4 +178,16 @@
 
 .reviews__button-write {
   margin-bottom: 10px;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    width: 175px;
+    top: 79px;
+    right: 50px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    right: 2px;
+  }
 }

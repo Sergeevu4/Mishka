@@ -1,8 +1,12 @@
 // Лучший продукт (index.html)
 
 .best-product {
+  position: relative;
   padding: 1px 30px;
-  margin-bottom: 15px;
+  padding-top: 26px;
+  margin-bottom: 21px;
+
+  word-wrap: break-word;
 }
 
 .best-product__title {
@@ -25,6 +29,10 @@
 }
 
 .best-product__desc {
+  color: $grey-dark;
+}
+
+.best-product__text {
   margin: 0;
   margin-bottom: 18px;
 }
@@ -42,26 +50,186 @@
 }
 
 .best-product__cell {
-  padding: 9px 29px 10px 0;
+  padding: 9px 24px 10px 0;
   border-bottom: 1px solid $grey;
   vertical-align: middle;
 }
 
+// .best-product__img-wrapper {
+//   margin-bottom: 140px;
+// }
 
 .best-product__img {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 140px;
+}
+
+.best-product__cost-wrapper {
+  position: absolute;
+  bottom: 15px;
+  left: 30px;
 }
 
 .best-product__cost {
   width: 125px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  min-height: 50px;
 
   font-size: 17px;
   font-weight: 700;
 }
 
 .best-product__button {
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
+}
+
+@media (min-width: $tablet) {
+  .best-product {
+    padding: 0;
+    padding-top: 34px;
+    margin-bottom: 52px;
+  }
+
+  .best-product__title-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: baseline;
+    margin-bottom: 49px;
+  }
+
+  .best-product__title {
+    width: 540px;
+    margin: 0;
+
+    font-size: 43px;
+    line-height: 50px;
+    margin-left: -4px;
+  }
+
+  .best-product__sticker {
+    width: 117px;
+    margin: 0;
+    margin-left: auto;
+    line-height: 17px;
+    padding-top: 12px;
+    padding-right: 10px;
+    text-align: center;
+  }
+
+  .best-product__desc-wrapper {
+    display: flex;
+  }
+
+  .best-product__desc {
+    width: 333px;
+  }
+
+  .best-product__text {
+    width: 282px;
+    margin: 0;
+    margin-bottom: 36px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .best-product__table {
+    width: 291px;
+    margin-bottom: 56px;
+  }
+
+  .best-product__cell {
+    padding-right: 0;
+  }
+
+  .best-product__cost-wrapper {
+    position: static;
+    width: 290px;
+  }
+
+  .best-product__cost {
+    width: 147px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .best-product__button {
+    width: 289px;
+  }
+
+  .best-product__img {
+    width: 333px;
+    height: 404px;
+    margin-top: 9px;
+    margin-bottom: 0;
+    background-color: #f1f1f1;
+  }
+}
+
+@media (min-width: $desktop) {
+  .best-product {
+    padding-top: 112px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 73px;
+  }
+
+  .best-product__title-wrapper {
+    margin-bottom: 0;
+  }
+
+  .best-product__title {
+    width: 878px;
+    order: 1;
+    z-index: 1;
+    margin-left: 0;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .best-product__sticker {
+    order: -1;
+    width: 172px;
+    margin-left: 0;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-left: 23px;
+  }
+
+  .best-product__desc-wrapper {
+    position: relative;
+    margin-left: 172px;
+  }
+
+  .best-product__desc {
+    width: 352px;
+    z-index: 1;
+  }
+
+  .best-product__text {
+    width: 282px;
+
+    padding-top: 47px;
+    margin-bottom: 49px;
+  }
+
+  .best-product__table {
+    margin-bottom: 110px;
+  }
+
+  .best-product__button {
+    width: 292px;
+  }
+
+  .best-product__img {
+    width: 525px;
+    height: 636px;
+
+    margin-top: 0;
+    position: absolute;
+    right: 0;
+    top: -112px;
+  }
 }

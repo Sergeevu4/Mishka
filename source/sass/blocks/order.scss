@@ -1,20 +1,43 @@
 //Форма (form.html)
 
-.form-wrapper {
-  padding: 0 30px;
-}
-// Временная обертка
-
 .order {
-  // color: yellow;
+  padding: 0 30px;
+  padding-top: 22px;
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    padding-top: 60px;
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 110px;
+    margin-bottom: 50px;
+  }
 }
 
 .order__desc {
-  margin-bottom: 27px;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 25px;
 
   font-size: 13px;
   line-height: 24px;
   color: $grey-dark;
+
+  @media (min-width: $tablet) {
+    width: 668px;
+    margin-bottom: 7px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 700px;
+    margin-bottom: 8px;
+  }
 }
 
 .order__form {
