@@ -66,7 +66,7 @@
 }
 
 .product__link-title {
-  margin-bottom: 5px;
+  display: block;
 
   &:hover {
     color: rgba($black, 0.6%);
@@ -80,6 +80,7 @@
 
 .product__title {
   margin: 0;
+  margin-bottom: 5px;
 
   font-size: 17px;
   font-weight: 700;
