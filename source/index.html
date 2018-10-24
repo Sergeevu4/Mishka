@@ -18,7 +18,7 @@
         HTML {
           /* Планшетный макет */
           background-image: url( "../pixel-glass-js/mishka-index-tablet.jpg");
-          background-position: 50% 307px;
+          background-position: 50% 0;
         }
       }
       /* Десктоп */
@@ -26,7 +26,7 @@
         HTML {
           /* Десктопный макет */
           background-image: url( "../pixel-glass-js/mishka-index-desktop.jpg");
-          background-position: 50% 307px;
+          background-position: 50% 0;
         }
       }
     </style>
@@ -37,25 +37,27 @@
   </head>
   <body class="page">
     <header class="page-header">
-      <div class="container">
-        <a class="page-header__logo logo">
-          <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип сайта Mishka">
-        </a>
 
         <nav class="header-nav">
           <button class="header-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню </span>
           </button>
 
+          <a class="header-nav__logo logo">
+            <img class="logo__image" src="img/logo-tablet.svg" alt="Логотип сайта Mishka">
+          </a>
+
+          <ul class="header-nav__list header-nav__list--move">
+            <li class="header-nav__item header-nav__item--move">
+              <a class="header-nav__link header-nav__link--move" href="catalog.html">Каталог товаров</a>
+            </li>
+
+            <li class="header-nav__item header-nav__item--move">
+              <a class="header-nav__link header-nav__link--move" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+
           <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="catalog.html">Каталог товаров</a>
-            </li>
-
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="form.html">Вязание на заказ</a>
-            </li>
-
             <li class="header-nav__item">
               <a class="header-nav__link header-nav__link--search" href="#">
                 <img class="header-nav__icon" src="img/icon-search.svg" alt="">
@@ -74,8 +76,19 @@
               </a>
             </li>
           </ul>
+
+          <ul class="header-nav__list-module">
+            <li class="header-nav__item-module">
+              <a class="header-nav__link-module" href="#">Новые поступления</a>
+            </li>
+            <li class="header-nav__item-module">
+              <a class="header-nav__link-module" href="#">Распродажа</a>
+            </li>
+          </ul>
+
+          <div class="header-nav__banners">Бесплатная доставка по России</div>
         </nav>
-      </div>
+
 
       <div class="page-header__title-wrapper page-header__title-wrapper--index">
         <h1 class="page-header__title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
