@@ -1,35 +1,30 @@
 //Шапка сайта
 
 .page-header {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  // flex-wrap: wrap;
   word-wrap: break-word;
+
+  @media (min-width: $tablet) {
+    background-image: linear-gradient($white 89px, #f9f9f9 89px);
+  }
 }
 
-.page-header__logo {
-  display: block;
-  width: 86px;
-  // min-height: 80px;
-  // тут у меня возникла трудность касаемо того о не правильности использования min-height, и width. Возможно следует воспользоваться flex-basis (для дальнейшего перестроения)
+.page-header-container {
+  width: 320px;
   margin: 0 auto;
-  padding: 22px 0;
+
+    @media (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1150px;
+  }
 }
 
-.logo__image {
-  display: block;
-}
 
 .page-header__title-wrapper {
-  // width: 320px;
-  // min-height: 177px;
-  // padding: 71px 20px 10px 20px;
-  padding-top: 71px;
+  padding-top: 70px;
   padding-bottom: 76px;
-  // padding-bottom: 20px;
-  // // margin-bottom: 30px;
 
   background-color: #f9f9f9;
 
@@ -60,7 +55,7 @@
     padding-bottom: 112px;
 
     &::before {
-      height: 27px;
+      height: 22px;
       background-size: auto 37px;
     }
   }
@@ -69,7 +64,7 @@
 .page-header__title-wrapper--index {
   // display: flex;
   // flex-direction: column;
-  min-height: 490px;
+  min-height: 488px;
   padding-bottom: 0;
 
   background-image: url("../../img/hero-mobile@1x.jpg");
@@ -82,8 +77,8 @@
     flex-direction: column;
     justify-content: space-between;
 
-    height: 757px;
-    padding-top: 155px;
+    height: 698px;
+    padding-top: 95px;
     background-image: url("../../img/hero-tablet@1x.jpg");
   }
 
