@@ -169,7 +169,7 @@
 
 @media (min-width: $desktop) {
   .best-product {
-    padding-top: 110px;
+    padding-top: 112px;
     display: flex;
     flex-direction: column;
     margin-bottom: 73px;
@@ -183,7 +183,7 @@
     width: 878px;
     order: 1;
     z-index: 1;
-    margin-left: 0;
+    // margin-left: 0;
 
     font-size: 53px;
     line-height: 57px;
