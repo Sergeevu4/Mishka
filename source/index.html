@@ -37,57 +37,56 @@
   </head>
   <body class="page">
     <header class="page-header">
+      <nav class="header-nav">
+        <button class="header-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню </span>
+        </button>
 
-        <nav class="header-nav">
-          <button class="header-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню </span>
-          </button>
+        <a class="header-nav__logo logo">
+          <img class="logo__image" src="img/logo-desktop.svg" alt="Логотип сайта Mishka">
+        </a>
 
-          <a class="header-nav__logo logo">
-            <img class="logo__image" src="img/logo-tablet.svg" alt="Логотип сайта Mishka">
-          </a>
+        <ul class="header-nav__list header-nav__list--goods">
+          <li class="header-nav__item header-nav__item--goods">
+            <a class="header-nav__link header-nav__link--goods" href="catalog.html">Каталог товаров</a>
+          </li>
 
-          <ul class="header-nav__list header-nav__list--move">
-            <li class="header-nav__item header-nav__item--move">
-              <a class="header-nav__link header-nav__link--move" href="catalog.html">Каталог товаров</a>
-            </li>
+          <li class="header-nav__item header-nav__item--goods">
+            <a class="header-nav__link header-nav__link--goods" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
 
-            <li class="header-nav__item header-nav__item--move">
-              <a class="header-nav__link header-nav__link--move" href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
+        <ul class="header-nav__list header-nav__list--actions">
+          <li class="header-nav__item header-nav__item--actions">
+            <a class="header-nav__link header-nav__link--actions header-nav__link--actions-search" href="#">
+              <img class="header-nav__icon--actions" src="img/icon-search.svg" alt="">
+                <!-- svg -->
 
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a class="header-nav__link header-nav__link--search" href="#">
-                <img class="header-nav__icon" src="img/icon-search.svg" alt="">
-                  <!-- svg -->
+              Поиск по сайту
+            </a>
+          </li>
 
-                Поиск по сайту
-              </a>
-            </li>
+          <li class="header-nav__item header-nav__item--actions">
+            <a class="header-nav__link header-nav__link--actions" href="#">
+              <img class="header-nav__icon--actions" src="img/icon-cart.svg" alt="">
+                <!-- svg -->
 
-            <li class="header-nav__item">
-              <a class="header-nav__link header-nav__link--basket" href="#">
-                <img class="header-nav__icon" src="img/icon-cart.svg" alt="">
-                  <!-- svg -->
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
 
-                Корзина: пока пуста
-              </a>
-            </li>
-          </ul>
+        <ul class="header-nav__list header-nav__list--sales">
+          <li class="header-nav__item header-nav__item--sales">
+            <a class="header-nav__link header-nav__link--sales" href="#">Новые поступления</a>
+          </li>
+          <li class="header-nav__item header-nav__item--sales">
+            <a class="header-nav__link header-nav__link--sales" href="#">Распродажа</a>
+          </li>
+        </ul>
 
-          <ul class="header-nav__list-module">
-            <li class="header-nav__item-module">
-              <a class="header-nav__link-module" href="#">Новые поступления</a>
-            </li>
-            <li class="header-nav__item-module">
-              <a class="header-nav__link-module" href="#">Распродажа</a>
-            </li>
-          </ul>
-
-          <div class="header-nav__banners">Бесплатная доставка по России</div>
-        </nav>
+        <div class="header-nav__banners">Бесплатная доставка по России</div>
+      </nav>
 
 
       <div class="page-header__title-wrapper page-header__title-wrapper--index">

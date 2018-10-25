@@ -36,47 +36,57 @@
 
   </head>
   <body class="page">
-
     <header class="page-header">
-      <div class="container">
-        <a class="page-header__logo logo"  href="index.html">
-          <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип сайта Mishka">
+      <nav class="header-nav">
+        <button class="header-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню </span>
+        </button>
+
+        <a class="header-nav__logo logo" href="index.html">
+          <img class="logo__image" src="img/logo-desktop.svg" alt="Логотип сайта Mishka">
         </a>
 
-        <nav class="header-nav">
-          <button class="header-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню </span>
-          </button>
+        <ul class="header-nav__list header-nav__list--goods">
+          <li class="header-nav__item header-nav__item--goods">
+            <a class="header-nav__link header-nav__link--goods" href="catalog.html">Каталог товаров</a>
+          </li>
 
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="catalog.html">Каталог товаров</a>
-            </li>
+          <li class="header-nav__item header-nav__item--goods">
+            <a class="header-nav__link header-nav__link--goods">Вязание на заказ</a>
+          </li>
+        </ul>
 
-            <li class="header-nav__item header-nav__item--current">
-              <a class="header-nav__link">Вязание на заказ</a>
-            </li>
+        <ul class="header-nav__list header-nav__list--actions">
+          <li class="header-nav__item header-nav__item--actions">
+            <a class="header-nav__link header-nav__link--actions header-nav__link--actions-search" href="#">
+              <img class="header-nav__icon--actions" src="img/icon-search.svg" alt="">
+                <!-- svg -->
 
-            <li class="header-nav__item">
-              <a class="header-nav__link header-nav__link--search" href="#">
-                <img class="header-nav__icon" src="img/icon-search.svg" alt="">
-                  <!-- svg -->
+              Поиск по сайту
+            </a>
+          </li>
 
-                Поиск по сайту
-              </a>
-            </li>
+          <li class="header-nav__item header-nav__item--actions">
+            <a class="header-nav__link header-nav__link--actions" href="#">
+              <img class="header-nav__icon--actions" src="img/icon-cart.svg" alt="">
+                <!-- svg -->
 
-            <li class="header-nav__item">
-              <a class="header-nav__link header-nav__link--basket" href="#">
-                <img class="header-nav__icon" src="img/icon-cart.svg" alt="">
-                  <!-- svg -->
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
 
-                Корзина: пока пуста
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        <ul class="header-nav__list header-nav__list--sales">
+          <li class="header-nav__item header-nav__item--sales">
+            <a class="header-nav__link header-nav__link--sales" href="#">Новые поступления</a>
+          </li>
+          <li class="header-nav__item header-nav__item--sales">
+            <a class="header-nav__link header-nav__link--sales" href="#">Распродажа</a>
+          </li>
+        </ul>
+
+        <div class="header-nav__banners">Бесплатная доставка по России</div>
+      </nav>
 
       <div class="page-header__title-wrapper">
         <h1 class="page-header__title">Вязание на заказ</h1>
