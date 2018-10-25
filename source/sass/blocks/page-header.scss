@@ -4,7 +4,8 @@
   word-wrap: break-word;
 
   @media (min-width: $tablet) {
-    background-image: linear-gradient($white 89px, #f9f9f9 89px);
+    background-image: linear-gradient($white 88px, #e7e7e7 88px, #e7e7e7 89px, #f9f9f9 89px, #f9f9f9 100px);
+    background-size: 100% 245px;
   }
 }
 
@@ -21,7 +22,6 @@
   }
 }
 
-
 .page-header__title-wrapper {
   padding-top: 70px;
   padding-bottom: 76px;
@@ -32,7 +32,7 @@
     // min-height: 240px;
     position: relative;
 
-    padding-top: 95px;
+    padding-top: 35px;
     padding-bottom: 93px;
 
     &::before {
@@ -55,7 +55,7 @@
     padding-bottom: 112px;
 
     &::before {
-      height: 22px;
+      height: 30px;
       background-size: auto 37px;
     }
   }
