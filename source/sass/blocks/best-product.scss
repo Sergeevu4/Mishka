@@ -169,7 +169,7 @@
 
 @media (min-width: $desktop) {
   .best-product {
-    padding-top: 112px;
+    padding-top: 110px;
     display: flex;
     flex-direction: column;
     margin-bottom: 73px;
@@ -193,14 +193,14 @@
     order: -1;
     width: 172px;
     margin-left: 0;
-    padding-top: 15px;
-    padding-right: 30px;
+    padding-top: 16px;
+    padding-right: 31px;
     padding-left: 23px;
   }
 
   .best-product__desc-wrapper {
     position: relative;
-    margin-left: 172px;
+    margin-left: 175px;
   }
 
   .best-product__desc {
@@ -211,7 +211,7 @@
   .best-product__text {
     width: 282px;
 
-    padding-top: 47px;
+    padding-top: 48px;
     margin-bottom: 49px;
   }
 
@@ -230,6 +230,6 @@
     margin-top: 0;
     position: absolute;
     right: 0;
-    top: -112px;
+    top: -109px;
   }
 }
