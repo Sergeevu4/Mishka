@@ -11,7 +11,7 @@
       background-repeat: no-repeat;
       background-position: 50% 0;
       /* По умолчанию показывается мобильный макет */
-      background-image: url( "../pixel-glass-js/mishka-form-mobile.psd.png");
+      background-image: url( "../pixel-glass-js/mishka-form-mobile.jpg");
     }
     /* Планшет */
     @media ( min-width: 768px ) {
@@ -37,14 +37,16 @@
   </head>
   <body class="page">
     <header class="page-header">
-      <nav class="header-nav">
+      <nav class="header-nav header-nav--closed header-nav--nojs">
         <button class="header-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню </span>
         </button>
 
-        <a class="header-nav__logo logo" href="index.html">
-          <img class="logo__image" src="img/logo-desktop.svg" alt="Логотип сайта Mishka">
-        </a>
+        <div class="header-nav__logo-wrapper">
+          <a class="header-nav__logo logo" href="index.html">
+            <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип сайта Mishka">
+          </a>
+        </div>
 
         <ul class="header-nav__list header-nav__list--goods">
           <li class="header-nav__item header-nav__item--goods">
