@@ -39,7 +39,7 @@
 .contacts__title-wrapper {
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet) {
     width: 678px;
@@ -74,7 +74,7 @@
       content: "";
       position: absolute;
       top: 4px;
-      right: 8px;
+      right: 9px;
       width: 47px;
       height: 81px;
 
@@ -91,7 +91,7 @@
 
     &::after {
       top: 11px;
-      left: 9px;
+      left: 8px;
     }
   }
 }
@@ -103,7 +103,7 @@
 .contacts__img {
   display: block;
   margin: 0 auto;
-  margin-bottom: 39px;
+  margin-bottom: 41px;
 
   @media (min-width: $tablet) {
     width: 768px;
@@ -133,7 +133,7 @@
   @media (min-width: $desktop) {
     position: absolute;
     bottom: 0;
-    left: 175px;
+    left: 174px;
     margin: 0;
   }
 }
