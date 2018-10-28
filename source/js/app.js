@@ -1,46 +1,43 @@
 var headerNav = document.querySelector('.header-nav');
 var headerToggle = document.querySelector('.header-nav__toggle');
 var popup = document.querySelector('.popup');
-var overlay = document.querySelector('.modal-overlay');
-var buttonOrder = document.querySelector('.button--order-js');
-
-
+var popupOverlay = document.querySelector('.popup-overlay');
+// var bodyPage = document.querySelector('.page-body');
+var buttonOrder = document.querySelectorAll('.button--order-js');
 
 headerNav.classList.remove('header-nav--nojs');
 
 // Кнопка переключения меню в мобильной версии
-
 headerToggle.addEventListener('click', function() {
-  if (headerNav.classList.contains('header-nav--closed')) {
-    headerNav.classList.remove('header-nav--closed');
-    headerNav.classList.add('header-nav--opened');
-  } else {
-    headerNav.classList.add('header-nav--closed');
-    headerNav.classList.remove('header-nav--opened');
-  }
+  headerNav.classList.toggle('header-nav--opened');
 });
 
 // Форма попап
 
-buttonOrder.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  popup.classList.add('popup--show');
-  overlay.classList.add('modal-overlay--show');
-  console.log('ok');
+for (var i = 0; i < buttonOrder.length; i++) {
+  buttonOrder[i].addEventListener('click', function (evt) {
+    evt.preventDefault();
+    popupOverlay.classList.add('popup-overlay--show');
+    // bodyPage.classList.add('page-body--popup-overlay');
+  });
+}
+
+popupOverlay.addEventListener('click', function() {
+  popupOverlay.classList.remove('popup-overlay--show');
+  // bodyPage.classList.remove('page-body--popup-overlay');
+});
+
+popup.addEventListener('click', function (evt) {
+  evt.stopPropagation();
 });
 
 
-overlay.addEventListener('click', function() {
-  overlay.classList.remove('modal-overlay--show');
-  popup.classList.remove('popup--show');
-});
-
-
-window.addEventListener('keydown', function (t) {
-  if (t.keyCode === 27) {
-    if (overlay.classList.contains('modal-overlay--show') && popup.classList.contains('popup--show')) {
-      overlay.classList.remove('modal-overlay--show');
-      popup.classList.remove('popup--show');
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (popupOverlay.classList.contains('popup-overlay--show')) {
+      popupOverlay.classList.remove('popup-overlay--show');
+      // bodyPage.classList.remove('page-body--popup-overlay');
     }
   }
 });
