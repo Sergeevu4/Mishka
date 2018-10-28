@@ -14,6 +14,10 @@
 
 .categories-nav__item {
   background-color: $green;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .categories-nav__item:nth-child(2) {
@@ -24,7 +28,7 @@
   display: block;
   width: 320px;
   margin: 0 auto;
-  padding: 25px 90px 30px 29px;
+  padding: 26px 90px 29px 29px;
   // padding: 8% 30% 9% 9%;
 
   &--interior {
@@ -40,7 +44,7 @@
   }
 
   &:hover {
-    transform: translateX(5px);
+    transform: translateY(-5px);
   }
 
   &:active {
@@ -94,7 +98,7 @@
   .categories-nav__link {
     width: 525px;
     // padding: 28px 105px 27px 36px;
-    padding: 28px 105px 42px 36px;
+    // padding: 28px 105px 44px 36px;
 
     &--interior {
       background-position: 92% 45%;

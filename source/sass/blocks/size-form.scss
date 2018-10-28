@@ -8,13 +8,29 @@
   @include list-reset;
 
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 21px;
+  // justify-content: space-evenly;
+  // justify-content: space-between;
+  // justify-content: center;
 
-  margin-bottom: 31px;
+  @media (min-width: $tablet) {
+    width: 356px;
+  }
 }
 
 .size-form__item {
-  // margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet) {
+    // margin-right: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
 }
 
 .size-form__input {
@@ -22,11 +38,12 @@
 }
 
 .size-form__label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 
   width: 82px;
+  padding: 16px 10px;
   min-height: 52px;
   font-size: 17px;
   font-weight: 700;
@@ -40,6 +57,11 @@
 
   &:hover {
     border-color: rgba($grey-dark, 0.3%);
+  }
+
+  @media (min-width: $tablet) {
+    // flex-grow: 1;
+    width: 111px;
   }
 }
 

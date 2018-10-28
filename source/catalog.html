@@ -11,14 +11,14 @@
         background-repeat: no-repeat;
         background-position: 50% 0;
         /* По умолчанию показывается мобильный макет */
-        background-image: url( "../pixel-glass-js/mishka-catalog-mobile.psd.png");
+        background-image: url( "../pixel-glass-js/mishka-catalog-mobile.jpg");
       }
       /* Планшет */
       @media ( min-width: 768px ) {
         HTML {
           /* Планшетный макет */
           background-image: url( "../pixel-glass-js/mishka-catalog-tablet.jpg");
-          background-position: 50% 307px;
+          background-position: 50% 0;
         }
       }
       /* Десктоп */
@@ -26,7 +26,7 @@
         HTML {
           /* Десктопный макет */
           background-image: url( "../pixel-glass-js/mishka-catalog-desktop.jpg");
-          background-position: 50% 307px;
+          background-position: 50% 0;
         }
       }
     </style>
@@ -37,45 +37,57 @@
   </head>
   <body class="page">
     <header class="page-header">
-      <div class="container">
-        <a class="page-header__logo logo"  href="index.html">
+      <nav class="header-nav header-nav--nojs">
+        <button class="header-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню </span>
+        </button>
+
+        <a class="header-nav__logo logo" href="index.html">
           <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип сайта Mishka">
         </a>
 
-        <nav class="header-nav">
-          <button class="header-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню </span>
-          </button>
+        <ul class="header-nav__list header-nav__list--goods">
+          <li class="header-nav__item header-nav__item--goods">
+            <a class="header-nav__link header-nav__link--goods">Каталог товаров</a>
+          </li>
 
-          <ul class="header-nav__list">
-            <li class="header-nav__item header-nav__item--current">
-              <a class="header-nav__link">Каталог товаров</a>
-            </li>
+          <li class="header-nav__item header-nav__item--goods">
+            <a class="header-nav__link header-nav__link--goods" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
 
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="form.html">Вязание на заказ</a>
-            </li>
+        <ul class="header-nav__list header-nav__list--actions">
+          <li class="header-nav__item header-nav__item--actions">
+            <a class="header-nav__link header-nav__link--actions header-nav__link--actions-search" href="#">
+              <img class="header-nav__icon--actions" src="img/icon-search.svg" alt="">
+                <!-- svg -->
 
-            <li class="header-nav__item">
-              <a class="header-nav__link header-nav__link--search" href="#">
-                <img class="header-nav__icon" src="img/icon-search.svg" alt="">
-                  <!-- svg -->
+              Поиск по сайту
+            </a>
+          </li>
 
-                Поиск по сайту
-              </a>
-            </li>
+          <li class="header-nav__item header-nav__item--actions">
+            <a class="header-nav__link header-nav__link--actions" href="#">
+              <img class="header-nav__icon--actions" src="img/icon-cart.svg" alt="">
+                <!-- svg -->
 
-            <li class="header-nav__item">
-              <a class="header-nav__link header-nav__link--basket" href="#">
-                <img class="header-nav__icon" src="img/icon-cart.svg" alt="">
-                  <!-- svg -->
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
 
-                Корзина: пока пуста
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        <ul class="header-nav__list header-nav__list--sales">
+          <li class="header-nav__item header-nav__item--sales">
+            <a class="header-nav__link header-nav__link--sales" href="#">Новые поступления</a>
+          </li>
+          <li class="header-nav__item header-nav__item--sales">
+            <a class="header-nav__link header-nav__link--sales" href="#">Распродажа</a>
+          </li>
+        </ul>
+
+        <div class="header-nav__banners">Бесплатная доставка по России</div>
+      </nav>
+
       <div class="page-header__title-wrapper">
         <h1 class="page-header__title">Каталог товаров</h1>
       </div>
@@ -91,16 +103,16 @@
             </a>
 
             <div class="product__content">
-              <a class="product__link-title" href="#">
-                <h3 class="product__title">Зайчик-попрыгайчик</h3>
-              </a>
+              <h3 class="product__title">
+                <a class="product__link-title" href="#"> Зайчик-попрыгайчик</a>
+              </h3>
 
               <div class="product__desc">Рост 30 см, вес 200 г</div>
 
               <footer class="product__footer">
                 <span class="product__price">1 200 руб.</span>
 
-                <button class="product__price-button">
+                <button class="product__price-button button--order-js">
                   <img src="img/icon-cart.svg" width="20" height="19" alt="">
                   <!-- svg -->
                 </button>
@@ -114,16 +126,16 @@
             </a>
 
             <div class="product__content">
-              <a class="product__link-title" href="#">
-                <h3 class="product__title">Корзинка для белья</h3>
-              </a>
+              <h3 class="product__title">
+                <a class="product__link-title" href="#">Корзинка для белья</a>
+              </h3>
 
               <div class="product__desc">Диаметр 15 см, высота 10 см</div>
 
               <footer class="product__footer">
                 <span class="product__price">690 руб.</span>
 
-                <button class="product__price-button">
+                <button class="product__price-button button--order-js">
                   <img src="img/icon-cart.svg" width="20" height="19" alt="">
                     <!-- svg -->
                 </button>
@@ -137,16 +149,16 @@
             </a>
 
             <div class="product__content">
-              <a class="product__link-title" href="#">
-                <h3 class="product__title">Большая корзинка для&nbsp;игрушек</h3>
-              </a>
+              <h3 class="product__title">
+                <a class="product__link-title" href="#">Большая корзинка для&nbsp;игрушек</a>
+              </h3>
 
               <div class="product__desc">Диаметр 30 см, высота 30 см</div>
 
               <footer class="product__footer">
                 <span class="product__price">1 500 руб.</span>
 
-                <button class="product__price-button">
+                <button class="product__price-button button--order-js">
                   <img src="img/icon-cart.svg" width="20" height="19" alt="">
                     <!-- svg -->
                 </button>
@@ -169,51 +181,52 @@
 
           <div class="make-products__text-wrapper">
             <p class="make-products__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <a class="button make-products__button-order" href="#">Сделать заказ</a>
+            <a class="button make-products__button-order button--order-js" href="#">Сделать заказ</a>
           </div>
         </div>
       </section>
 
-      <div class="popup">
-        <h2 class="popup__title">Добавить в корзину</h2>
+      <div class="popup-overlay">
+        <div class="popup">
+          <h2 class="popup__title">Добавить в корзину</h2>
 
-        <div class="popup__text">Выберите размер:</div>
+          <div class="popup__text">Выберите размер:</div>
 
-        <form class="popup__form size-form" action="https://echo.htmlacademy.ru" method="post">
-          <ul class="size-form__list">
+          <form class="popup__form size-form" action="https://echo.htmlacademy.ru" method="post">
+            <ul class="size-form__list">
 
-            <li class="size-form__item">
-              <input class="size-form__input visually-hidden" type="radio" id="size-s" name="size" value="S">
+              <li class="size-form__item">
+                <input class="size-form__input visually-hidden" type="radio" id="size-s" name="size" value="S">
 
-              <label class="size-form__label" for="size-s">S</label>
-            </li>
+                <label class="size-form__label" for="size-s">S</label>
+              </li>
 
-            <li class="size-form__item">
-              <input class="size-form__input visually-hidden" type="radio" id="size-m" name="size" value="M">
+              <li class="size-form__item">
+                <input class="size-form__input visually-hidden" type="radio" id="size-m" name="size" value="M">
 
-              <label class="size-form__label" for="size-m">M</label>
-            </li>
+                <label class="size-form__label" for="size-m">M</label>
+              </li>
 
-            <li class="size-form__item">
-              <input class="size-form__input visually-hidden" type="radio" id="size-l" name="size" value="L">
+              <li class="size-form__item">
+                <input class="size-form__input visually-hidden" type="radio" id="size-l" name="size" value="L">
 
-              <label class="size-form__label" for="size-l">L</label>
-            </li>
-          </ul>
-          <button class="button popup__button" type="submit">Добавить</button>
-        </form>
+                <label class="size-form__label" for="size-l">L</label>
+              </li>
+            </ul>
+            <button class="button popup__button" type="submit">Добавить</button>
+          </form>
+        </div>
       </div>
 
-      <div class="modal-overlay"></div>
     </main>
 
     <footer class="page-footer">
       <div class="container page-footer__wrapper">
-        <a class="page-footer__icon-link" href="#">
+        <a class="page-footer__icon-link" href="index.html">
           <img class="page-footer__icon" src="img/logo-footer.svg" alt="" width= "102" height="34">
         </a>
 
-          <ul class="page-footer__social-list social">
+        <ul class="page-footer__social-list social">
           <li class="social__item">
             <a class="social__link" href="https://www.instagram.com/">
               <span class="visually-hidden">instagram</span>
@@ -253,5 +266,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/app.js"> </script>
   </body>
 </html>

@@ -39,7 +39,7 @@
 .contacts__title-wrapper {
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet) {
     width: 678px;
@@ -74,7 +74,7 @@
       content: "";
       position: absolute;
       top: 4px;
-      right: 8px;
+      right: 9px;
       width: 47px;
       height: 81px;
 
@@ -91,7 +91,7 @@
 
     &::after {
       top: 11px;
-      left: 7px;
+      left: 8px;
     }
   }
 }
