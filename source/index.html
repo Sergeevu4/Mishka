@@ -52,7 +52,11 @@
         </button>
 
         <a class="header-nav__logo logo">
-          <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип сайта Mishka">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__image" src="img/logo-mobile.svg" width="85" height="35" alt="Логотип сайта Mishka">
+          </picture>
         </a>
 
         <ul class="header-nav__list header-nav__list--goods">
