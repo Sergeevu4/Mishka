@@ -1,5 +1,27 @@
 // Отзывы (index.html)
 
+.rewiews-wrapper {
+  margin: 0 auto;
+
+  background-image: url("../../img/eview@1x.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet) {
+    background-image: url("../../img/review@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/review@2x.jpg");
+      background-size: 350px 457px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 1050px;
+    background-position: 0 0;
+  }
+}
+
+
 .reviews {
   width: 320px;
   margin: 0 auto;
@@ -14,16 +36,21 @@
     padding: 79px 40px 50px 39px;
     margin-bottom: 34px;
 
-    background-image: url("../../img/review@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: -10px 1px;
+    // background-image: url("../../img/review@1x.jpg");
+    // background-repeat: no-repeat;
+    // background-position: -10px 1px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      // background-image: url("../../img/review@2x.jpg");
+      // background-size: 350px auto;
+    }
   }
 
   @media (min-width: $desktop) {
     width: 1050px;
     padding: 72px 0 65px 173px;
     margin-bottom: 66px;
-    background-position: 0 0;
+    // background-position: 0 0;
   }
 }
 
