@@ -1,10 +1,10 @@
 // Отзывы (index.html)
 
 .rewiews-wrapper {
-    margin: 0 auto;
+  margin: 0 auto;
 
-    background-image: url("../../img/eview@1x.jpg");
-    background-repeat: no-repeat;
+  background-image: url("../../img/eview@1x.jpg");
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet) {
     background-image: url("../../img/review@1x.jpg");
