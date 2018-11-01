@@ -250,8 +250,12 @@
             <source  media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg 2x">
             <source  media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg 2x">
 
-            <img class="contacts__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Местоположение на карте">
+            <img class="contacts__img contacts__img--nojs" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Местоположение на карте">
           </picture>
+
+          <div class="contacts__map-yandex contacts__map-yandex--nojs">
+
+          </div>
 
           <a class="button contacts__button" href="#">Напишите нам</a>
         </div>
@@ -336,8 +340,12 @@
           </svg>
         </a>
       </div>
-
     </footer>
+
+  <!--   <script src="https://api-maps.yandex.ru/2.1/?apikey=<3d098fb8-2613-4d0f-8d36-03e0bb7d3b17>&lang=ru_RU" type="text/javascript">
+    </script> -->
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=package.standard"> </script>
     <script src="js/app.js"> </script>
   </body>
 </html>
