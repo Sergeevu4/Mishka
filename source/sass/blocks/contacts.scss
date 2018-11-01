@@ -27,10 +27,8 @@
 }
 
 .contacts__wrapper {
-
   @media (min-width: $tablet) {
     // width: 768px;
-
   }
 
   @media (min-width: $desktop) {
@@ -136,8 +134,6 @@
   display: none;
 }
 
-
-
 // .contacts__map-yandex {
 //   display: block;
 //   margin: 0 auto;
@@ -159,9 +155,6 @@
 //     margin: 0;
 //   }
 // }
-
-
-
 
 .contacts__button {
   margin: 0 auto;
