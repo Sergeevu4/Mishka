@@ -31,6 +31,18 @@
   }
 }
 
+.page-footer__icon {
+  fill: $black;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: rgba(#46c1ae, 0.3%);
+  }
+}
+
 .page-footer__social-list {
   // color: yellow;
 
@@ -47,6 +59,10 @@
   padding-top: 21px;
   padding-bottom: 24px;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet) {
     margin-left: auto;
     padding: 0;
@@ -59,4 +75,12 @@
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
+}
+
+.page-footer__copyright-icon {
+  fill: #63d1bb;
+
+  &:hover {
+    fill: #46c1ae;
+  }
 }
