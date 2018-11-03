@@ -11,6 +11,9 @@
       document.createElement( "picture" );
     </script>
     <script src="js/picturefill.min.js" async></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script> svg4everybody (); </script>
+
 
     <style>
       HTML {
@@ -72,8 +75,9 @@
         <ul class="header-nav__list header-nav__list--actions">
           <li class="header-nav__item header-nav__item--actions">
             <a class="header-nav__link header-nav__link--actions header-nav__link--actions-search" href="#">
-              <img class="header-nav__icon--actions" src="img/icon-search.svg" alt="">
-                <!-- svg -->
+              <svg class="header-nav__icon--actions" width="17" height="17">
+                <use xlink:href="img/svg-sprite/sprite.svg#icon-search"></use>
+              </svg>
 
               Поиск по сайту
             </a>
@@ -81,8 +85,9 @@
 
           <li class="header-nav__item header-nav__item--actions">
             <a class="header-nav__link header-nav__link--actions" href="#">
-              <img class="header-nav__icon--actions" src="img/icon-cart.svg" alt="">
-                <!-- svg -->
+              <svg class="header-nav__icon--actions" width="17" height="17">
+                <use xlink:href="img/svg-sprite/sprite.svg#icon-cart"></use>
+              </svg>
 
               Корзина: пока пуста
             </a>
@@ -241,21 +246,7 @@
             </table>
           </div>
 
-          <picture>
-            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp, img/map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp, img/map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/map-mobile@1x.webp, img/map-mobile@2x.webp 2x">
-
-
-            <source  media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg 2x">
-            <source  media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg 2x">
-
-            <img class="contacts__img contacts__img--nojs" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Местоположение на карте">
-          </picture>
-
-          <div class="contacts__map-yandex contacts__map-yandex--nojs">
-
-          </div>
+          <div class="contacts__map-yandex contacts__map-yandex--nojs"></div>
 
           <a class="button contacts__button" href="#">Напишите нам</a>
         </div>
@@ -298,7 +289,11 @@
     <footer class="page-footer">
       <div class="container page-footer__wrapper">
         <a class="page-footer__icon-link" href="#">
-          <img class="page-footer__icon" src="img/logo-footer.svg" alt="" width= "102" height="34">
+          <span class="visually-hidden">Логотип сайта Mishka"</span>
+
+          <svg class="page-footer__icon" width="102" height="34">
+            <use xlink:href="img/svg-sprite/sprite.svg#logo-footer"></use>
+          </svg>
         </a>
 
         <ul class="page-footer__social-list social">
@@ -306,8 +301,9 @@
             <a class="social__link" href="https://www.instagram.com/">
               <span class="visually-hidden">instagram</span>
 
-              <img class="social__icon social__icon--insta" src="img/icon-insta.svg" alt="">
-              <!-- svg -->
+              <svg class="social__icon social__icon--insta" width="22" height="21">
+                <use xlink:href="img/svg-sprite/sprite.svg#icon-insta"></use>
+              </svg>
             </a>
           </li>
 
@@ -315,8 +311,9 @@
             <a class="social__link" href="https://www.facebook.com/">
               <span class="visually-hidden">facebook</span>
 
-              <img class="social__icon social__icon--fb" src="img/icon-fb.svg" alt="">
-              <!-- svg -->
+              <svg class="social__icon social__icon--fb" width="15" height="28">
+                <use xlink:href="img/svg-sprite/sprite.svg#icon-fb"></use>
+              </svg>
             </a>
           </li>
 
@@ -324,8 +321,9 @@
             <a class="social__link" href="https://twitter.com/">
               <span class="visually-hidden">twitter</span>
 
-              <img class="social__icon social__icon--twitter" src="img/icon-twitter.svg" alt="">
-              <!-- svg -->
+              <svg class="social__icon social__icon--twitter" width="24" height="20">
+                <use xlink:href="img/svg-sprite/sprite.svg#icon-twitter"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -335,17 +333,15 @@
             <span class="visually-hidden">htmlacademy</span>
           </div>
 
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-            <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+          <svg class="page-footer__copyright-icon" width="27" height="34">
+            <use xlink:href="img/svg-sprite/sprite.svg#copyright-icon"></use>
           </svg>
         </a>
       </div>
     </footer>
 
-  <!--   <script src="https://api-maps.yandex.ru/2.1/?apikey=<3d098fb8-2613-4d0f-8d36-03e0bb7d3b17>&lang=ru_RU" type="text/javascript">
-    </script> -->
-
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=package.standard"> </script>
+
     <script src="js/app.js"> </script>
   </body>
 </html>
