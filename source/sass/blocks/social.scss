@@ -30,3 +30,15 @@
 .social__link {
   //color:yellow;
 }
+
+.social__icon {
+  fill: $black;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: rgba(#46c1ae, 0.3%);
+  }
+}
