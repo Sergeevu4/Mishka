@@ -7,14 +7,10 @@ var buttonOrder = document.querySelectorAll('.button--order-js');
 var mapYandex = document.querySelector('.contacts__map-yandex');
 var mapImg = document.querySelector('.contacts__img');
 
-
-
 headerNav.classList.remove('header-nav--nojs');
-mapYandex.classList.remove('contacts__map-yandex--nojs');
-mapImg.classList.remove('contacts__img--nojs');
-
 
 // Кнопка переключения меню в мобильной версии
+
 headerToggle.addEventListener('click', function() {
   headerNav.classList.toggle('header-nav--opened');
 });
