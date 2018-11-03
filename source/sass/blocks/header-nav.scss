@@ -285,6 +285,7 @@
 .header-nav__link--actions-search {
   fill: rgba($black, 0.2%);
 
+
   &:hover {
     fill: $green;
   }
@@ -293,6 +294,11 @@
     fill: rgba($green, 0.3%);
   }
 }
+
+.header-nav__icon--actions {
+  pointer-events: none;
+}
+
 
 .header-nav__list--sales {
   display: none;

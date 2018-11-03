@@ -28,10 +28,7 @@
 }
 
 .social__link {
-  //color:yellow;
-}
-
-.social__icon {
+  display: block;
   fill: $black;
 
   &:hover {
@@ -41,4 +38,8 @@
   &:active {
     fill: rgba(#46c1ae, 0.3%);
   }
+}
+
+.social__icon {
+  pointer-events: none;
 }

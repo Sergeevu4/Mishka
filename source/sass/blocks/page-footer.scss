@@ -29,9 +29,7 @@
   @media (min-width: $desktop) {
     margin-right: 349px;
   }
-}
 
-.page-footer__icon {
   fill: $black;
 
   &:hover {
@@ -41,6 +39,10 @@
   &:active {
     fill: rgba(#46c1ae, 0.3%);
   }
+}
+
+.page-footer__icon {
+  pointer-events: none;
 }
 
 .page-footer__social-list {
@@ -59,6 +61,12 @@
   padding-top: 21px;
   padding-bottom: 24px;
 
+  fill: #63d1bb;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -75,12 +83,9 @@
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
+  pointer-events: none;
 }
 
 .page-footer__copyright-icon {
-  fill: #63d1bb;
-
-  &:hover {
-    fill: #46c1ae;
-  }
+  pointer-events: none;
 }
