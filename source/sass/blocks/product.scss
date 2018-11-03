@@ -142,5 +142,14 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  // Нужно сделать активное состояние для svg внутри кнопки
+
+  fill: rgba(black, 0.3%);
+
+  &:hover {
+    fill: $green;
+  }
+
+  &:active {
+    fill: rgba($green, 0.3%);
+  }
 }
