@@ -130,6 +130,12 @@
 
   @media (min-width: $tablet) {
     font-size: 18px;
+    letter-spacing: 0.2px;
+  }
+
+
+  @media (min-width: $desktop) {
+    letter-spacing: -0.5px;
   }
 }
 
@@ -141,6 +147,7 @@
 
   @media (min-width: $tablet) {
     font-size: 17px;
+    letter-spacing: 0px;
   }
 }
 
