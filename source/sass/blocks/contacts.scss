@@ -4,27 +4,17 @@
   margin-bottom: 39px;
   padding-top: 42px;
 
-  background-image: url("../../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position: 21.9px 0.3px;
-  background-size: auto 6.5px;
-
   word-wrap: break-word;
 
   @media (min-width: $tablet) {
     padding-top: 61px;
     margin-bottom: 57px;
-    // padding-top: 63px;
-    background-size: auto 15.5px;
-    background-position: 93.4px 2.4px;
   }
 
   @media (min-width: $desktop) {
     max-width: 1150px;
     margin: 0 auto;
     padding-bottom: 105px;
-    background-size: auto 21px;
-    background-position: 223.8px 1px;
   }
 }
 
