@@ -12,7 +12,7 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 
   color: $grey-dark;
 
@@ -27,5 +27,9 @@
 
   &:active {
     color: rgba($white, 0.3%);
+  }
+
+  @media (min-width: $tablet) {
+    letter-spacing: -0.5px;
   }
 }
