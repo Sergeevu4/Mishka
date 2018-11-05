@@ -28,5 +28,18 @@
 }
 
 .social__link {
-  //color:yellow;
+  display: block;
+  fill: $black;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: rgba(#46c1ae, 0.3%);
+  }
+}
+
+.social__icon {
+  pointer-events: none;
 }

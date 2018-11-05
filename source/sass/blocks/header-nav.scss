@@ -89,13 +89,13 @@
 
   cursor: pointer;
 
-  &:hover {
-    opacity: 0.6;
-  }
+  // &:hover {
+  //   opacity: 0.6;
+  // }
 
-  &:active {
-    opacity: 0.3;
-  }
+  // &:active {
+  //   opacity: 0.3;
+  // }
 
   @media (min-width: $tablet) {
     order: 1;
@@ -120,6 +120,14 @@
 
   width: 86px;
   height: 35px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet) {
     width: 113px;
@@ -162,11 +170,18 @@
   padding: 27px 5px 27px 76px;
 
   &:hover {
-    opacity: 0.6;
+    color: rgba($black, 0.6%);
   }
 
   &:active {
-    opacity: 0.3;
+    color: rgba($black, 0.3%);
+  }
+}
+
+.header-nav__link--current {
+  &:hover,
+  &:active {
+    color: $black;
   }
 }
 
@@ -252,6 +267,8 @@
   top: 31px;
   left: 31px;
 
+  pointer-events: none;
+
   @media (min-width: $tablet) {
     top: 35px;
     left: 33px;
@@ -260,10 +277,23 @@
 
 .header-nav__link--actions-search {
   @media (min-width: $tablet) {
-
     width: 80px;
+    min-height: 87px;
     padding: 29px 3px 33px 79px;
     font-size: 0;
+  }
+}
+
+.header-nav__link--actions,
+.header-nav__link--actions-search {
+  fill: rgba($black, 0.2%);
+
+  &:hover {
+    fill: $green;
+  }
+
+  &:active {
+    fill: rgba($green, 0.3%);
   }
 }
 

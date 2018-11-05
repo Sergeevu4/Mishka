@@ -6,19 +6,23 @@
 
   background-image: url("../../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
-  background-position: top;
-  background-size: auto 6px;
+  background-position: 21.5px 0;
+  background-size: auto 6.5px;
 
   @media (min-width: $tablet) {
     padding-top: 66px;
-    background-size: auto 17px;
     margin-bottom: 36px;
+    background-size: auto 15.5px;
+    background-position: 93.4px 0;
   }
 
   @media (min-width: $desktop) {
+    max-width: 1150px;
+    margin: 0 auto;
     padding-top: 81px;
-    background-size: auto 23px;
     margin-bottom: 45px;
+    background-size: auto 21px;
+    background-position: 223.8px 1px;
   }
 }
 

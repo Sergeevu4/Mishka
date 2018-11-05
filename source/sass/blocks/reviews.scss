@@ -21,12 +21,11 @@
   }
 }
 
-
 .reviews {
   width: 320px;
   margin: 0 auto;
   padding: 0 30px;
-  margin-bottom: 46px;
+  margin-bottom: 44px;
 
   word-wrap: break-word;
 
@@ -130,6 +129,12 @@
 
   @media (min-width: $tablet) {
     font-size: 18px;
+    letter-spacing: 0.2px;
+  }
+
+
+  @media (min-width: $desktop) {
+    letter-spacing: -0.5px;
   }
 }
 
@@ -141,6 +146,7 @@
 
   @media (min-width: $tablet) {
     font-size: 17px;
+    letter-spacing: 0;
   }
 }
 

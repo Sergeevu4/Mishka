@@ -55,7 +55,7 @@
   @media (min-width: $tablet) {
     width: 334px;
     // width: 50%;
-    padding: 25px 27px;
+    padding: 25px 29px;
   }
 
   @media (min-width: $desktop) {
@@ -126,7 +126,7 @@
   font-weight: 700;
 
   @media (min-width: $tablet) {
-    padding-left: 4px;
+    padding-left: 3px;
     font-size: 17px;
     line-height: 24px;
   }
@@ -142,5 +142,14 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  // Нужно сделать активное состояние для svg внутри кнопки
+
+  fill: rgba(black, 0.3%);
+
+  &:hover {
+    fill: $green;
+  }
+
+  &:active {
+    fill: rgba($green, 0.3%);
+  }
 }
