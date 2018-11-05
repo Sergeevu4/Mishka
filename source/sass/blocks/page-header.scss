@@ -35,6 +35,7 @@
       background-image: url("../../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       background-size: auto 22.8px;
+      background-position: top center;
       z-index: 10;
     }
   }
@@ -71,8 +72,9 @@
     padding-top: 95px;
 
     &::before {
-      height: 22px;
+      height: 23.5px;
       background-size: auto 22.7px;
+      bottom: -1px;
     }
 
     background-image: url("../../img/hero-tablet@1x.jpg");
@@ -92,10 +94,10 @@
     }
 
     &::before {
-      height: 28px;
-      background-size: auto 37.2px;
+      height: 28.2px;
+      background-size: auto 37px;
+      bottom: -0.6px;
     }
-
   }
 }
 
