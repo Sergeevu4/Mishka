@@ -13,7 +13,6 @@
 // Основные стили для кнопки
 @import "blocks/button";
 
-
 // ******************** header (Шапка) *********************
 @import "blocks/page-header";
 @import "blocks/header-nav";
@@ -40,10 +39,12 @@
 @import "blocks/order";
 @import "blocks/order-form";
 
-// ******************** catalog.html************************
+// ******************** catalog.html ************************
 // Каталог товаров
 @import "blocks/products";
 @import "blocks/product";
 @import "blocks/make-products";
 
+// ******************** gray-wave (Серая волна) **************
+@import "blocks/gray-wave";
 // source\sass\blocks\page-header.scss
