@@ -1,0 +1,18 @@
+// Серая волна
+
+.gray-wave {
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: 21.5px 0;
+  background-size: auto 6.5px;
+
+  @media (min-width: $tablet) {
+    background-size: auto 15.5px;
+    background-position: 93.4px 0;
+  }
+
+  @media (min-width: $desktop) {
+    background-size: auto 21px;
+    background-position: 223.8px 1px;
+  }
+}
