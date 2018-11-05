@@ -3,7 +3,7 @@ var headerToggle = document.querySelector('.header-nav__toggle');
 var popup = document.querySelector('.popup');
 var popupOverlay = document.querySelector('.popup-overlay');
 // var bodyPage = document.querySelector('.page-body');
-var buttonOrder = document.querySelectorAll('.button--order-js');
+var buttonsOrder = document.querySelectorAll('.button--order-js');
 var mapYandex = document.querySelector('.contacts__map-yandex');
 var mapImg = document.querySelector('.contacts__img');
 
@@ -16,24 +16,28 @@ headerToggle.addEventListener('click', function() {
 });
 
 // Форма попап
+if(buttonsOrder) {
+  for (var i = 0; i < buttonsOrder.length; i++) {
+    buttonsOrder[i].addEventListener('click', function (evt) {
+      evt.preventDefault();
+      popupOverlay.classList.add('popup-overlay--show');
+      // bodyPage.classList.add('page-body--popup-overlay');
+    });
+  }
+};
 
-for (var i = 0; i < buttonOrder.length; i++) {
-  buttonOrder[i].addEventListener('click', function (evt) {
-    evt.preventDefault();
-    popupOverlay.classList.add('popup-overlay--show');
-    // bodyPage.classList.add('page-body--popup-overlay');
+if(popupOverlay) {
+  popupOverlay.addEventListener('click', function() {
+    popupOverlay.classList.remove('popup-overlay--show');
+    // bodyPage.classList.remove('page-body--popup-overlay');
   });
-}
+};
 
-popupOverlay.addEventListener('click', function() {
-  popupOverlay.classList.remove('popup-overlay--show');
-  // bodyPage.classList.remove('page-body--popup-overlay');
-});
-
-popup.addEventListener('click', function (evt) {
-  evt.stopPropagation();
-});
-
+if(popupOverlay) {
+  popup.addEventListener('click', function (evt) {
+    evt.stopPropagation();
+  });
+};
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
@@ -47,8 +51,8 @@ window.addEventListener('keydown', function (evt) {
 
 
 // Карта Яндекс
-
-ymaps.ready(function () {
+if(mapYandex) {
+  ymaps.ready(function () {
   var myMap = new ymaps.Map(mapYandex, {
     center: [59.938695, 30.323053],
     zoom: 17
@@ -70,4 +74,5 @@ ymaps.ready(function () {
 
   myMap.geoObjects
     .add(myPlacemark);
-});
+  });
+};
