@@ -16,7 +16,8 @@ headerToggle.addEventListener('click', function() {
 });
 
 // Форма попап
-if(buttonsOrder) {
+
+if(buttonsOrder.length) {
   for (var i = 0; i < buttonsOrder.length; i++) {
     buttonsOrder[i].addEventListener('click', function (evt) {
       evt.preventDefault();
@@ -24,20 +25,18 @@ if(buttonsOrder) {
       // bodyPage.classList.add('page-body--popup-overlay');
     });
   }
-};
 
-if(popupOverlay) {
   popupOverlay.addEventListener('click', function() {
     popupOverlay.classList.remove('popup-overlay--show');
     // bodyPage.classList.remove('page-body--popup-overlay');
   });
-};
 
-if(popupOverlay) {
   popup.addEventListener('click', function (evt) {
     evt.stopPropagation();
   });
+
 };
+
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
