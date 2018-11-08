@@ -48,7 +48,7 @@ gulp.task("sprite", function () {
     )
 
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img/svg/svg-sprite/"));
+  .pipe(gulp.dest("source/img/svg/svg-sprite/"));
 })
 
 
@@ -91,8 +91,10 @@ gulp.task("webp", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/**"
+    "source/img/*",
+    "source/img/svg/*.svg",
+    "source/js/**",
+    "source/pixel-glass-js/**"
     ], {
       base: "source"
     })
