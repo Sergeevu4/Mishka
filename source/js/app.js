@@ -63,7 +63,7 @@ if(mapYandex) {
     }, {
         iconLayout: 'default#image',
         // Своё изображение иконки метки.
-        iconImageHref: '../img/icon-map-pin.svg',
+        iconImageHref: '../img/svg/icon-map-pin.svg',
         // Размеры метки.
         iconImageSize: [66, 100],
         // Смещение левого верхнего угла иконки относительно
