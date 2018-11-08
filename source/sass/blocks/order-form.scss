@@ -418,6 +418,7 @@
   @media (min-width: $tablet) {
     width: 668px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
