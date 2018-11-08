@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style-min.css">
 
     <script>
       // Picture element HTML5 shiv
       document.createElement( "picture" );
     </script>
-    <script src="js/picturefill.min.js" async=""></script>
+    <script src="js/picturefill.min-min.js" async></script>
 
     <style>
       HTML {
@@ -53,7 +55,7 @@
           <span class="visually-hidden">Открыть меню </span>
         </button>
 
-        <a class="header-nav__logo logo" href="index.html">
+        <a class="header-nav__logo logo" href="index-min.html">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/svg/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
@@ -67,7 +69,7 @@
           </li>
 
           <li class="header-nav__item header-nav__item--goods">
-            <a class="header-nav__link header-nav__link--goods" href="form.html">Вязание на заказ</a>
+            <a class="header-nav__link header-nav__link--goods" href="form-min.html">Вязание на заказ</a>
           </li>
         </ul>
 
@@ -281,7 +283,7 @@
 
     <footer class="page-footer">
       <div class="container page-footer__wrapper">
-        <a class="page-footer__icon-link" href="index.html">
+        <a class="page-footer__icon-link" href="index-min.html">
           <svg class="page-footer__icon" width="102" height="34">
             <use xlink:href="#logo-footer"></use>
           </svg>
@@ -331,6 +333,6 @@
       </div>
     </footer>
 
-    <script src="js/app.js"> </script>
+    <script src="js/app-min.js"> </script>
   </body>
 </html>
