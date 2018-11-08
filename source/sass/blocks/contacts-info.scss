@@ -3,6 +3,7 @@
 .contacts-info {
   width: 260px;
   border-collapse: collapse;
+  word-break: break-word;
 
   line-height: 30px;
   color: #444444;
@@ -59,17 +60,25 @@
   vertical-align: top;
   padding-bottom: 29px;
 
+  &:first-child {
+    min-width: 75px;
+  }
+
   @media (min-width: $tablet) {
     padding-right: 16px;
+
+    &:first-child {
+      min-width: 78px;
+    }
   }
 
   @media (min-width: $desktop) {
     padding-right: 0;
     min-width: 220px;
-  }
 
-  &:first-child {
-    min-width: 78px;
+    &:first-child {
+      min-width: 81px;
+    }
   }
 }
 
