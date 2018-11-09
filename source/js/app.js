@@ -2,8 +2,7 @@ var headerNav = document.querySelector('.header-nav');
 var headerToggle = document.querySelector('.header-nav__toggle');
 var popup = document.querySelector('.popup');
 var popupOverlay = document.querySelector('.popup-overlay');
-// var bodyPage = document.querySelector('.page-body');
-var buttonOrder = document.querySelectorAll('.button--order-js');
+var buttonsOrder = document.querySelectorAll('.button--order-js');
 var mapYandex = document.querySelector('.contacts__map-yandex');
 var mapImg = document.querySelector('.contacts__img');
 
@@ -17,22 +16,23 @@ headerToggle.addEventListener('click', function() {
 
 // Форма попап
 
-for (var i = 0; i < buttonOrder.length; i++) {
-  buttonOrder[i].addEventListener('click', function (evt) {
-    evt.preventDefault();
-    popupOverlay.classList.add('popup-overlay--show');
-    // bodyPage.classList.add('page-body--popup-overlay');
+if(buttonsOrder.length) {
+  for (var i = 0; i < buttonsOrder.length; i++) {
+    buttonsOrder[i].addEventListener('click', function (evt) {
+      evt.preventDefault();
+      popupOverlay.classList.add('popup-overlay--show');
+    });
+  }
+
+  popupOverlay.addEventListener('click', function() {
+    popupOverlay.classList.remove('popup-overlay--show');
   });
-}
 
-popupOverlay.addEventListener('click', function() {
-  popupOverlay.classList.remove('popup-overlay--show');
-  // bodyPage.classList.remove('page-body--popup-overlay');
-});
+  popup.addEventListener('click', function (evt) {
+    evt.stopPropagation();
+  });
 
-popup.addEventListener('click', function (evt) {
-  evt.stopPropagation();
-});
+};
 
 
 window.addEventListener('keydown', function (evt) {
@@ -40,15 +40,14 @@ window.addEventListener('keydown', function (evt) {
     evt.preventDefault();
     if (popupOverlay.classList.contains('popup-overlay--show')) {
       popupOverlay.classList.remove('popup-overlay--show');
-      // bodyPage.classList.remove('page-body--popup-overlay');
     }
   }
 });
 
 
 // Карта Яндекс
-
-ymaps.ready(function () {
+if(mapYandex) {
+  ymaps.ready(function () {
   var myMap = new ymaps.Map(mapYandex, {
     center: [59.938695, 30.323053],
     zoom: 17
@@ -60,7 +59,7 @@ ymaps.ready(function () {
     }, {
         iconLayout: 'default#image',
         // Своё изображение иконки метки.
-        iconImageHref: '../img/icon-map-pin.svg',
+        iconImageHref: '../img/svg/icon-map-pin.svg',
         // Размеры метки.
         iconImageSize: [66, 100],
         // Смещение левого верхнего угла иконки относительно
@@ -70,4 +69,5 @@ ymaps.ready(function () {
 
   myMap.geoObjects
     .add(myPlacemark);
-});
+  });
+};

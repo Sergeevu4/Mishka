@@ -4,16 +4,9 @@
   padding-top: 33px;
   margin-bottom: 56px;
 
-  background-image: url("../../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position: 21.5px 0;
-  background-size: auto 6.5px;
-
   @media (min-width: $tablet) {
     padding-top: 66px;
     margin-bottom: 36px;
-    background-size: auto 15.5px;
-    background-position: 93.4px 0;
   }
 
   @media (min-width: $desktop) {
@@ -21,8 +14,6 @@
     margin: 0 auto;
     padding-top: 81px;
     margin-bottom: 45px;
-    background-size: auto 21px;
-    background-position: 223.8px 1px;
   }
 }
 
@@ -92,7 +83,7 @@
   }
 
   &--flower {
-    background-image: url("../../img/icon-feature-flower.svg");
+    background-image: url("../../img/svg/icon-feature-flower.svg");
     background-position: 13px 8px;
 
     @media (min-width: $tablet) {
@@ -102,7 +93,7 @@
   }
 
   &--banknote {
-    background-image: url("../../img/icon-feature-money.svg");
+    background-image: url("../../img/svg/icon-feature-money.svg");
     background-position: 5px 9px;
 
     @media (min-width: $tablet) {
@@ -112,7 +103,7 @@
   }
 
   &--heart {
-    background-image: url("../../img/icon-feature-heart.svg");
+    background-image: url("../../img/svg/icon-feature-heart.svg");
     background-position: 13px 14px;
 
     @media (min-width: $tablet) {
@@ -122,7 +113,7 @@
   }
 
   &--ball {
-    background-image: url("../../img/icon-feature-ball.svg");
+    background-image: url("../../img/svg/icon-feature-ball.svg");
     background-position: 9px 11px;
 
     @media (min-width: $tablet) {
@@ -132,7 +123,7 @@
   }
 
   &--rocket {
-    background-image: url("../../img/icon-feature-rocket.svg");
+    background-image: url("../../img/svg/icon-feature-rocket.svg");
     background-position: 0 12px;
 
     @media (min-width: $tablet) {
@@ -142,7 +133,7 @@
   }
 
   &--gift {
-    background-image: url("../../img/icon-feature-gift.svg");
+    background-image: url("../../img/svg/icon-feature-gift.svg");
     background-position: 8px 10px;
 
     @media (min-width: $tablet) {

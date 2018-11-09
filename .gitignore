@@ -6,9 +6,10 @@
 *.pdf
 *.psd
 *.sublime*
+build/
 node_modules/
 npm-debug.*
-source/css/*.css
+# source/css/*.css
 Thumbs.db
 *txt
 pixel-glass-js/
