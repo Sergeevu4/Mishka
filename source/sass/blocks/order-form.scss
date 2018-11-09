@@ -242,7 +242,7 @@
   }
 
   &:active::before {
-    border-color: $grey;
+    border-color: rgba($grey-dark, 0.3%);
   }
 
   @media (min-width: $tablet) {
@@ -259,10 +259,14 @@
 }
 
 .order-form__input:checked + .order-form__label--checkbox::before {
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("../../img/svg/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 16px;
+
+  @media (min-width: $tablet) {
+    background-size: 33px 22px;
+  }
 }
 
 .order-form__input:focus + .order-form__label--radio::before,
