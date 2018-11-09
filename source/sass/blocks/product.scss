@@ -26,7 +26,6 @@
   background-color: $grey;
 
   @media (min-width: $tablet) {
-    // width: 50%;
     width: 334px;
   }
 
@@ -54,13 +53,11 @@
 
   @media (min-width: $tablet) {
     width: 334px;
-    // width: 50%;
     padding: 25px 29px;
   }
 
   @media (min-width: $desktop) {
     width: 315px;
-    // height: 100%;
     flex-grow: 1;
   }
 }
@@ -91,7 +88,6 @@
 }
 
 .product__desc {
-  // position: relative;
   margin-bottom: 20px;
 
   font-size: 13px;

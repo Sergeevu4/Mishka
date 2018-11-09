@@ -1,11 +1,5 @@
 // Попап + .overlay
 
-// .page-body {
-//   &--popup-overlay {
-//     overflow: hidden;
-//   }
-// }
-
 .popup-overlay {
   display: none;
   position: fixed;
@@ -24,13 +18,10 @@
 }
 
 .popup {
-  // display: none;
   width: 320px;
   min-height: 336px;
   padding: 31px 25px;
   position: fixed;
-  // top: 1700px;
-  // top: 1529px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -41,17 +32,9 @@
   word-wrap: break-word;
   text-align: center;
 
-  // &--show {
-  //   display: block;
-  // }
-
   @media (min-width: $tablet) {
     width: 570px;
     padding: 32px 25px;
-  }
-
-  @media (min-width: $desktop) {
-    // width: 50%;
   }
 }
 
@@ -87,10 +70,6 @@
   }
 }
 
-.popup__form {
-  // color: yellow;
-}
-
 .popup__button {
   padding: 17px 10px 15px 10px;
   background-color: $green;
@@ -98,7 +77,6 @@
   border: none;
 
   @media (min-width: $tablet) {
-    // width: 67%;
     width: 349px;
   }
 }

@@ -1,8 +1,5 @@
 // Форма размеров в popup
 
-.size-form {
-  // color: yellow;
-}
 
 .size-form__list {
   @include list-reset;
@@ -11,9 +8,6 @@
   flex-wrap: wrap;
   margin: 0 auto;
   margin-bottom: 21px;
-  // justify-content: space-evenly;
-  // justify-content: space-between;
-  // justify-content: center;
 
   @media (min-width: $tablet) {
     width: 356px;
@@ -27,21 +21,13 @@
   margin-bottom: 10px;
 
   @media (min-width: $tablet) {
-    // margin-right: 5px;
     margin: auto;
     margin-bottom: 10px;
   }
 }
 
-.size-form__input {
-  // color: yellow;
-}
 
 .size-form__label {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-
   width: 82px;
   padding: 16px 10px;
   min-height: 52px;
@@ -60,7 +46,6 @@
   }
 
   @media (min-width: $tablet) {
-    // flex-grow: 1;
     width: 111px;
   }
 }
