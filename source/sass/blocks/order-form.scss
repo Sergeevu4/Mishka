@@ -45,7 +45,6 @@
 
 .order-form__title {
   display: block;
-  // width: 100%;
   margin-bottom: 25px;
 
   line-height: 16px;
@@ -214,14 +213,11 @@
 
 .order-form__label--checkbox {
   position: relative;
-  // display: block;
   min-height: 39px;
   padding-top: 10px;
   padding-left: 62px;
   margin-bottom: 22px;
 
-  // user-select: none;
-  // cursor: pointer;
 
   &::before {
     content: "";
@@ -269,11 +265,6 @@
   }
 }
 
-.order-form__input:focus + .order-form__label--radio::before,
-.order-form__input:focus + .order-form__label--checkbox::before {
-  border-style: dotted;
-  border-color: $green;
-}
 
 .order-form__label--text {
   padding-top: 3px;
@@ -297,7 +288,6 @@
   margin-bottom: 3px;
   padding: 11px 15px 12px 0;
   border: none;
-  // box-shadow: inset 0 -2px 0 $black;
   background-color: transparent;
   border-bottom: 2px solid $black;
 
@@ -427,7 +417,6 @@
     align-items: center;
 
     margin-top: 26px;
-    // margin-bottom: 26px;
   }
 
   @media (min-width: $desktop) {
