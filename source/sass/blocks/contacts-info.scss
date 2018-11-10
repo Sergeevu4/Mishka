@@ -28,13 +28,11 @@
   }
 
   @media (min-width: $desktop) {
-    // flex-wrap: no-wrap;
     display: table;
   }
 }
 
 .contacts-info__row {
-  // color: yellow;
   @media (min-width: $tablet) {
     display: flex;
 

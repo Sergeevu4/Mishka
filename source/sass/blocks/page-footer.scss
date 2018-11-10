@@ -12,7 +12,6 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet) {
-    // min-height: 143px;
     padding: 50px 0;
     flex-direction: row;
   }
@@ -46,8 +45,6 @@
 }
 
 .page-footer__social-list {
-  // color: yellow;
-
   @media (min-width: $tablet) {
     margin-left: auto;
   }

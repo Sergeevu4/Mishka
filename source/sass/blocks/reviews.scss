@@ -32,15 +32,6 @@
     width: 750px;
     padding: 79px 40px 50px 39px;
     margin-bottom: 34px;
-
-    // background-image: url("../../img/review@1x.jpg");
-    // background-repeat: no-repeat;
-    // background-position: -10px 1px;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      // background-image: url("../../img/review@2x.jpg");
-      // background-size: 350px auto;
-    }
   }
 
   @media (min-width: $desktop) {
@@ -78,10 +69,6 @@
   @include list-reset;
   margin-bottom: 26px;
 }
-
-// .reviews__item {
-//   margin-bottom: 20px;
-// }
 
 .reviews__blockquote {
   margin: 0;

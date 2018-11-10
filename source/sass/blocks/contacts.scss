@@ -19,10 +19,6 @@
 }
 
 .contacts__wrapper {
-  @media (min-width: $tablet) {
-    // width: 768px;
-  }
-
   @media (min-width: $desktop) {
     position: relative;
     display: flex;
@@ -50,8 +46,6 @@
 }
 
 .contacts__title {
-  // width: 260px;
-  // margin: 0 auto;
   margin: 0;
   margin-bottom: 23px;
 
@@ -92,9 +86,6 @@
   }
 }
 
-.contacts__table {
-  // color: yellow;
-}
 
 .contacts__map-yandex {
   width: auto;

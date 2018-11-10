@@ -33,8 +33,6 @@
 }
 
 .categories-nav__item {
-  // background-color: $green;
-
   @media (min-width: $tablet) {
     &:hover,
     &:focus {
@@ -42,9 +40,6 @@
     }
   }
 }
-// .categories-nav__item:nth-child(2) {
-//   background-color: $green-dark;
-// }
 
 .categories-nav__link {
   position: relative;
@@ -52,7 +47,6 @@
   width: 320px;
   margin: 0 auto;
   padding: 26px 90px 29px 29px;
-  // padding: 8% 30% 9% 9%;
   background-color: $green;
 
   &:active {
@@ -115,7 +109,7 @@
   @media (min-width: $tablet) {
     width: 334px;
     padding: 28px 105px 41px 36px;
-    // padding: 8% 30% 8% 11%;
+
     &:hover,
     &:focus {
       transform: translateY(-5px);
@@ -134,8 +128,6 @@
 
   @media (min-width: $desktop) {
     width: 525px;
-    // padding: 28px 105px 27px 36px;
-    // padding: 28px 105px 44px 36px;
 
     &--interior {
       background-position: 92% 45%;
