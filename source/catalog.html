@@ -76,7 +76,8 @@
         <ul class="header-nav__list header-nav__list--actions">
           <li class="header-nav__item header-nav__item--actions">
             <a class="header-nav__link header-nav__link--actions header-nav__link--actions-search" href="#">
-              <svg class="header-nav__icon--actions" width="21" height="20">
+
+              <svg class="header-nav__icon-actions" width="21" height="20">
                 <use xlink:href="#icon-search"></use>
               </svg>
 
@@ -86,7 +87,7 @@
 
           <li class="header-nav__item header-nav__item--actions">
             <a class="header-nav__link header-nav__link--actions" href="#">
-              <svg class="header-nav__icon--actions" width="21" height="18">
+              <svg class="header-nav__icon-actions" width="21" height="18">
                 <use xlink:href="#icon-cart"></use>
               </svg>
 
@@ -140,12 +141,13 @@
               <footer class="product__footer">
                 <span class="product__price">1 200 руб.</span>
 
-                <button class="product__price-button button--order-js">
+                <a class="product__price-button button-order-js" href="#">
+                  <span class="visually-hidden">Кнопка для заказа</span>
 
                   <svg class="product__price-icon" width="23" height="20">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
-                </button>
+                </a>
               </footer>
             </div>
           </li>
@@ -174,13 +176,15 @@
               <footer class="product__footer">
                 <span class="product__price">690 руб.</span>
 
-                <button class="product__price-button button--order-js">
+                <a class="product__price-button button-order-js" href="#">
+                  <span class="visually-hidden">Кнопка для заказа</span>
+
                   <svg class="product__price-icon" width="23" height="20">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
-                </button>
+                </a>
               </footer>
-          </div>
+            </div>
           </li>
 
           <li class="products__item product">
@@ -207,11 +211,13 @@
               <footer class="product__footer">
                 <span class="product__price">1 500 руб.</span>
 
-                <button class="product__price-button button--order-js">
+                <a class="product__price-button button-order-js" href="#">
+                  <span class="visually-hidden">Кнопка для заказа</span>
+
                   <svg class="product__price-icon" width="23" height="20">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
-                </button>
+                </a>
               </footer>
             </div>
           </li>
@@ -321,7 +327,7 @@
           </li>
         </ul>
 
-        <a class="page-footer__copyright" href="https://htmlacademy.ru/">
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <div class="page-footer__copyright-text">Разработано
             <span class="visually-hidden">htmlacademy</span>
           </div>
