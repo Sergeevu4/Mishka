@@ -29,8 +29,9 @@
 @import "blocks/page-footer";
 @import "blocks/social";
 
-// ******************* popup ******************************
-// Попап таблица + overlay
+// ******************* popup + overlay******************************
+// Попап таблица
+@import "blocks/popup-overlay";
 @import "blocks/popup";
 @import "blocks/size-form";
 
@@ -39,15 +40,15 @@
 @import "blocks/order";
 @import "blocks/order-form";
 
-// ******************** catalog.html ************************
+// ******************** catalog.html ***********************
 // Каталог товаров
 @import "blocks/products";
 @import "blocks/product";
 @import "blocks/make-products";
 
-// ******************** gray-wave (Серая волна) **************
+// ******************** gray-wave (Серая волна) *************
 @import "blocks/gray-wave";
 
-// ******************** logo **************
+// ******************** logo ********************************
 @import "blocks/logo";
 // source\sass\blocks\page-header.scss
