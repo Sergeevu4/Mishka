@@ -4,40 +4,6 @@
   word-break: break-word;
 }
 
-// .order-form__group-wrapper {
-//   width: 260px;
-//   margin: 0 auto;
-
-//   @media (min-width: $tablet) {
-//     width: 668px;
-
-//     display: flex;
-//     flex-direction: row;
-//   }
-
-//   @media (min-width: $desktop) {
-//     width: 925px;
-//   }
-// }
-
-
-// .order-form__group {
-//   margin: 0;
-//   margin-bottom: 12px;
-//   padding: 0;
-//   border: none;
-
-//   @media (min-width: $tablet) {
-//     padding-top: 50px;
-//     padding-bottom: 26px;
-//     margin-bottom: 0;
-
-//     &:nth-child(2n) {
-//       background-color: $grey;
-//     }
-//   }
-// }
-
 .order-form__group-wrapper {
   margin-bottom: 12px;
 
@@ -142,8 +108,6 @@
 
 .order-form__list--color {
   @media (min-width: $tablet) {
-    // display: flex;
-    // flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -291,7 +255,7 @@
 }
 
 .order-form__input:checked + .order-form__label--checkbox::before {
-  background-image: url("../../img/svg/icon-tick.svg");
+  background-image: url("../img/svg/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 16px;
@@ -415,7 +379,6 @@
     right: 6px;
   }
 }
-
 
 .order-form__textarea {
   width: 260px;
