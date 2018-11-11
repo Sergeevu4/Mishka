@@ -68,7 +68,7 @@
       width: 47px;
       height: 81px;
 
-      background-image: url("../../img/svg/icon-flag.svg");
+      background-image: url("../img/svg/icon-flag.svg");
       background-repeat: no-repeat;
     }
   }
@@ -94,13 +94,13 @@
   margin: 0 auto;
   margin-bottom: 38px;
 
-  background-image: url("../../img/svg/icon-map-pin.svg"), url("../../img/map-mobile@1x.jpg");
+  background-image: url("../img/svg/icon-map-pin.svg"), url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: auto, cover;
   background-position: 52% 42%, center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/svg/icon-map-pin.svg"), url("../../img/map-mobile@2x.jpg");
+    background-image: url("../img/svg/icon-map-pin.svg"), url("../img/map-mobile@2x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: 51% 43%, center;
   }
@@ -108,13 +108,13 @@
   @media (min-width: $tablet) {
     margin-bottom: 55px;
 
-    background-image: url("../../img/svg/icon-map-pin.svg"), url("../../img/map-tablet@1x.jpg");
+    background-image: url("../img/svg/icon-map-pin.svg"), url("../img/map-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-size: auto, cover;
     background-position: 52% 42%, center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/svg/icon-map-pin.svg"), url("../../img/map-tablet@2x.jpg");
+      background-image: url("../img/svg/icon-map-pin.svg"), url("../img/map-tablet@2x.jpg");
       background-repeat: no-repeat, no-repeat;
       background-position: 51% 43%, center;
     }
@@ -124,13 +124,13 @@
     width: 527px;
     margin: 0;
 
-    background-image: url("../../img/svg/icon-map-pin.svg"), url("../../img/map-desktop@1x.jpg");
+    background-image: url("../img/svg/icon-map-pin.svg"), url("../img/map-desktop@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-size: auto, 525px 457px;
     background-position: 51% 43%, center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/svg/icon-map-pin.svg"), url("../../img/map-desktop@2x.jpg");
+      background-image: url("../img/svg/icon-map-pin.svg"), url("../img/map-desktop@2x.jpg");
       background-repeat: no-repeat, no-repeat;
       background-position: 51% 43%, center;
     }

@@ -13,6 +13,34 @@
       document.createElement( "picture" );
     </script>
     <script src="js/picturefill.min-min.js" async></script>
+
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "../pixel-glass-js/mishka-catalog-mobile.jpg");
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "../pixel-glass-js/mishka-catalog-tablet.jpg");
+          background-position: 50% 0;
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1150px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "../pixel-glass-js/mishka-catalog-desktop.jpg");
+          background-position: 50% 0;
+        }
+      }
+    </style>
+    <link href="../pixel-glass-js/styles.css" rel="stylesheet">
+    <script src="../pixel-glass-js/script.js"></script>
+
   </head>
 
   <body class="page">
@@ -48,7 +76,8 @@
         <ul class="header-nav__list header-nav__list--actions">
           <li class="header-nav__item header-nav__item--actions">
             <a class="header-nav__link header-nav__link--actions header-nav__link--actions-search" href="#">
-              <svg class="header-nav__icon--actions" width="21" height="20">
+
+              <svg class="header-nav__icon-actions" width="21" height="20">
                 <use xlink:href="#icon-search"></use>
               </svg>
 
@@ -58,7 +87,7 @@
 
           <li class="header-nav__item header-nav__item--actions">
             <a class="header-nav__link header-nav__link--actions" href="#">
-              <svg class="header-nav__icon--actions" width="21" height="18">
+              <svg class="header-nav__icon-actions" width="21" height="18">
                 <use xlink:href="#icon-cart"></use>
               </svg>
 
@@ -104,7 +133,7 @@
 
             <div class="product__content">
               <h3 class="product__title">
-                <a class="product__link-title" href="#"> Зайчик-попрыгайчик</a>
+                <a class="product__link-title" href="#">Зайчик-попрыгайчик</a>
               </h3>
 
               <div class="product__desc">Рост 30 см, вес 200 г</div>
@@ -112,12 +141,13 @@
               <footer class="product__footer">
                 <span class="product__price">1 200 руб.</span>
 
-                <button class="product__price-button button--order-js">
+                <a class="product__price-button button-order-js" href="#">
+                  <span class="visually-hidden">Кнопка для заказа</span>
 
                   <svg class="product__price-icon" width="23" height="20">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
-                </button>
+                </a>
               </footer>
             </div>
           </li>
@@ -146,13 +176,15 @@
               <footer class="product__footer">
                 <span class="product__price">690 руб.</span>
 
-                <button class="product__price-button button--order-js">
+                <a class="product__price-button button-order-js" href="#">
+                  <span class="visually-hidden">Кнопка для заказа</span>
+
                   <svg class="product__price-icon" width="23" height="20">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
-                </button>
+                </a>
               </footer>
-          </div>
+            </div>
           </li>
 
           <li class="products__item product">
@@ -179,11 +211,13 @@
               <footer class="product__footer">
                 <span class="product__price">1 500 руб.</span>
 
-                <button class="product__price-button button--order-js">
+                <a class="product__price-button button-order-js" href="#">
+                  <span class="visually-hidden">Кнопка для заказа</span>
+
                   <svg class="product__price-icon" width="23" height="20">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
-                </button>
+                </a>
               </footer>
             </div>
           </li>
@@ -206,21 +240,21 @@
               <img class="make-products__video-image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
             </picture>
 
+            <button class="make-products__video-button">
+              <span class="visually-hidden">Кнопка play</span>
+            </button>
 
-            <svg class="make-products__video-icon" width="101" height="77">
-              <use xlink:href="#icon-play"></use>
-            </svg>
           </div>
 
           <div class="make-products__text-wrapper">
             <p class="make-products__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <a class="button make-products__button-order button--order-js" href="#">Сделать заказ</a>
+            <a class="button make-products__button-order button-order-js" href="#">Сделать заказ</a>
           </div>
         </div>
       </section>
 
-      <div class="popup-overlay">
-        <div class="popup">
+      <div class="popup popup--overlay">
+        <div class="popup__wrapper">
           <h2 class="popup__title">Добавить в корзину</h2>
 
           <div class="popup__text">Выберите размер:</div>
@@ -293,7 +327,7 @@
           </li>
         </ul>
 
-        <a class="page-footer__copyright" href="https://htmlacademy.ru/">
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <div class="page-footer__copyright-text">Разработано
             <span class="visually-hidden">htmlacademy</span>
           </div>

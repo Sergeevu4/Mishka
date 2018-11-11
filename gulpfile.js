@@ -124,6 +124,7 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/*.webp",
     "source/js/**",
+    "source/pixel-glass-js/**"
     ], {
       base: "source"
     })

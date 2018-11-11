@@ -13,8 +13,35 @@
       document.createElement( "picture" );
     </script>
     <script src="js/picturefill.min-min.js" async></script>
-  </head>
 
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "../pixel-glass-js/mishka-index-mobile.jpg");
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "../pixel-glass-js/mishka-index-tablet.jpg");
+          background-position: 50% 0;
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1150px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "../pixel-glass-js/mishka-index-desktop.jpg");
+          background-position: 50% 0;
+        }
+      }
+    </style>
+    <link href="../pixel-glass-js/styles.css" rel="stylesheet">
+    <script src="../pixel-glass-js/script.js"></script>
+
+  </head>
   <body class="page-body">
 
     <div style="display:none">
@@ -24,7 +51,7 @@
     <header class="page-header">
       <nav class="header-nav header-nav--nojs">
         <button class="header-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню </span>
+          <span class="visually-hidden">Открыть меню</span>
         </button>
 
         <a class="header-nav__logo logo">
@@ -48,7 +75,7 @@
         <ul class="header-nav__list header-nav__list--actions">
           <li class="header-nav__item header-nav__item--actions">
             <a class="header-nav__link header-nav__link--actions header-nav__link--actions-search" href="#">
-              <svg class="header-nav__icon--actions" width="21" height="20">
+              <svg class="header-nav__icon-actions" width="21" height="20">
                 <use xlink:href="#icon-search"></use>
               </svg>
 
@@ -58,7 +85,7 @@
 
           <li class="header-nav__item header-nav__item--actions">
             <a class="header-nav__link header-nav__link--actions" href="#">
-              <svg class="header-nav__icon--actions" width="21" height="18">
+              <svg class="header-nav__icon-actions" width="21" height="18">
                 <use xlink:href="#icon-cart"></use>
               </svg>
 
@@ -129,7 +156,7 @@
 
             <div class="best-product__cost-wrapper">
               <div class="best-product__cost">Цена: 990 руб.</div>
-              <a class="button best-product__button button--order-js" href="#">Заказать</a>
+              <a class="button best-product__button button-order-js" href="#">Заказать</a>
             </div>
           </div>
 
@@ -166,8 +193,8 @@
         </div>
       </section>
 
-      <div class="rewiews-wrapper">
-        <section class="reviews">
+      <div class="reviews">
+        <section class="reviews__section">
           <h2 class="reviews__title">Отзывы</h2>
 
           <ul class="reviews__list">
@@ -225,8 +252,8 @@
         </div>
       </section>
 
-      <div class="popup-overlay">
-        <div class="popup">
+      <div class="popup popup--overlay">
+        <div class="popup__wrapper">
           <h2 class="popup__title">Добавить в корзину</h2>
 
           <div class="popup__text">Выберите размер:</div>
@@ -301,7 +328,7 @@
           </li>
         </ul>
 
-        <a class="page-footer__copyright" href="https://htmlacademy.ru/">
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <div class="page-footer__copyright-text">Разработано
             <span class="visually-hidden">htmlacademy</span>
           </div>
