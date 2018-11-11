@@ -1,8 +1,8 @@
 var headerNav = document.querySelector('.header-nav');
 var headerToggle = document.querySelector('.header-nav__toggle');
-var popup = document.querySelector('.popup');
-var popupOverlay = document.querySelector('.popup-overlay');
-var buttonsOrder = document.querySelectorAll('.button--order-js');
+var popup = document.querySelector('.popup__wrapper');
+var popupOverlay = document.querySelector('.popup--overlay');
+var buttonsOrder = document.querySelectorAll('.button-order-js');
 var mapYandex = document.querySelector('.contacts__map-yandex');
 var mapImg = document.querySelector('.contacts__img');
 
@@ -20,12 +20,12 @@ if(buttonsOrder.length) {
   for (var i = 0; i < buttonsOrder.length; i++) {
     buttonsOrder[i].addEventListener('click', function (evt) {
       evt.preventDefault();
-      popupOverlay.classList.add('popup-overlay--show');
+      popupOverlay.classList.add('popup--overlay-show');
     });
   }
 
   popupOverlay.addEventListener('click', function() {
-    popupOverlay.classList.remove('popup-overlay--show');
+    popupOverlay.classList.remove('popup--overlay-show');
   });
 
   popup.addEventListener('click', function (evt) {
@@ -38,8 +38,8 @@ if(buttonsOrder.length) {
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (popupOverlay.classList.contains('popup-overlay--show')) {
-      popupOverlay.classList.remove('popup-overlay--show');
+    if (popupOverlay.classList.contains('popup--overlay-show')) {
+      popupOverlay.classList.remove('popup--overlay-show');
     }
   }
 });
