@@ -122,8 +122,8 @@
 
         <form class="order__form order-form" action="https://echo.htmlacademy.ru" method="get">
 
+          <div class="order-form__group-wrapper">
             <fieldset class="order-form__group">
-              <div class="order-form__group-wrapper">
                 <legend class="order-form__title">
                   <span class="order-form__title-text">Тип</span>
                 </legend>
@@ -141,8 +141,8 @@
                     <label class="order-form__label order-form__label--radio" for="order-toys">Детская игрушка</label>
                   </li>
                 </ul>
-              </div>
             </fieldset>
+          </div>
 
 
           <fieldset class="order-form__group">
@@ -242,7 +242,7 @@
                 </label>
 
                 <div class="order-form__input-icon">
-                  <input class="order-form__input order-form__input--contact-email" type="contact-email" name="email" placeholder="Ваш Email*" required="">
+                  <input class="order-form__input order-form__input--contact-email" type="email" id="contact-email" name="email" placeholder="Ваш Email*" required="">
 
                   <svg class="order-form__icon" width="32" height="32">
                     <use xlink:href="#icon-mail"></use>
