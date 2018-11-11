@@ -106,30 +106,6 @@
   }
 }
 
-.logo__image {
-  display: block;
-
-  width: 86px;
-  height: 35px;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  @media (min-width: $tablet) {
-    width: 113px;
-    height: 46px;
-  }
-
-  @media (min-width: $desktop) {
-    width: 149px;
-    height: 72px;
-  }
-}
 
 .header-nav__list {
   @include list-reset;
@@ -245,7 +221,7 @@
   }
 }
 
-.header-nav__icon--actions {
+.header-nav__icon-actions {
   position: absolute;
   top: 31px;
   left: 31px;
