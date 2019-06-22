@@ -2100,6 +2100,10 @@ input[type="radio"].visually-hidden {
       line-height: 26px; } }
   .order-form__input::-webkit-input-placeholder {
     color: rgba(68, 68, 68, 0.3); }
+  .order-form__input::-moz-placeholder {
+    color: rgba(68, 68, 68, 0.3); }
+  .order-form__input:-ms-input-placeholder {
+    color: rgba(68, 68, 68, 0.3); }
   .order-form__input::-ms-input-placeholder {
     color: rgba(68, 68, 68, 0.3); }
   .order-form__input::placeholder {
@@ -2184,6 +2188,10 @@ input[type="radio"].visually-hidden {
     .order-form__textarea {
       width: 76%; } }
   .order-form__textarea::-webkit-input-placeholder {
+    color: rgba(68, 68, 68, 0.3); }
+  .order-form__textarea::-moz-placeholder {
+    color: rgba(68, 68, 68, 0.3); }
+  .order-form__textarea:-ms-input-placeholder {
     color: rgba(68, 68, 68, 0.3); }
   .order-form__textarea::-ms-input-placeholder {
     color: rgba(68, 68, 68, 0.3); }
